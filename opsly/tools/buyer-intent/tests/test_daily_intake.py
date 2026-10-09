@@ -87,6 +87,28 @@ class DailyDigestTests(unittest.TestCase):
                              fetcher=broken, now=self.now)
         self.assertFalse(self.out.exists())
 
+    def test_partial_source_failure_keeps_healthy_feed_and_reports_degradation(self):
+        sources = json.loads(self.config.read_text(encoding='utf-8'))
+        sources.append({
+            'label': 'temporarily-down',
+            'url': 'https://example.net/unavailable-feed.xml',
+            'approved_host': 'example.net',
+        })
+        self.config.write_text(json.dumps(sources), encoding='utf-8')
+
+        def fetcher(source):
+            if source['label'] == 'temporarily-down':
+                raise ValueError('feed temporarily unavailable')
+            return self.feed
+
+        daily_intake.run(self.config, self.db, self.out, execute=True,
+                         fetcher=fetcher, now=self.now)
+        report = json.loads(self.out.read_text(encoding='utf-8'))
+        self.assertEqual(report['collection_status'], 'degraded')
+        self.assertEqual(report['successful_sources'], ['hn-freelance'])
+        self.assertEqual(report['failed_sources'][0]['source'], 'temporarily-down')
+        self.assertEqual(report['new_review_candidates'], 1)
+
     def test_empty_source_list_refuses_execution(self):
         self.config.write_text('[]')
         with self.assertRaises(ValueError):
