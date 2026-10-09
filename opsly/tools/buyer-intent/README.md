@@ -6,6 +6,9 @@ implementation. It does **not** use the legacy Opsly stack.
 
 ## Capabilities
 
+- `collector.py`: optional approved-host HTTPS RSS collection with strict limits,
+  no redirects and no network access until `--execute`; `sources.example.json`
+  contains **no active sources**.
 - `rss_adapter.py`: convert an already downloaded, permitted RSS/Atom XML
   file into candidate JSONL. It makes **no network calls**. It requires a
   published timestamp and an HTTPS evidence URL. It does not fabricate requests.
@@ -17,6 +20,18 @@ implementation. It does **not** use the legacy Opsly stack.
   authenticated event publication, with an explicit canonical bundle hash and
   `OPSLY_SWARM_API_TOKEN` secret read from environment. Acknowledgement is
   admission, **not** downstream completion, buyer verification or revenue.
+
+## Approved feed collection (optional, disabled by default)
+
+```bash
+python3 -B collector.py \
+  --sources sources.example.json \
+  --out-dir /secure/feeds
+```
+
+This command only previews the configured feeds. After an authorized source list
+has been completed and reviewed for public usage, `--execute` would allow
+retrieval into local XML files; it never performs automatic discovery or outreach.
 
 ## Local offline flow
 
