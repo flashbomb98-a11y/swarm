@@ -8,6 +8,7 @@ on:
     branches: [master]
     paths:
       - '.github/workflows/opsly-daily-buyer-intent.yml'
+      - 'opsly/tools/buyer-intent/sources.public.json'
 
 permissions:
   contents: read
