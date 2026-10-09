@@ -61,6 +61,24 @@ class DailyDigestTests(unittest.TestCase):
                              fetcher=lambda _: self.feed, now=self.now)
         self.assertEqual(json.loads(self.out.read_text())['new_review_candidates'], 0)
 
+    def test_existing_watch_is_reevaluated_when_body_becomes_available(self):
+        first = self.feed.replace(
+            b'<title>Looking for a freelance Python developer with budget $2000</title>',
+            b'<title>General discussion</title>')
+        first = first.replace(b'<title>General discussion</title>',
+                              b'<title>General discussion</title>')
+        daily_intake.run(self.config, self.db, self.out, execute=True,
+                         fetcher=lambda _: first, now=self.now)
+        self.assertEqual(json.loads(self.out.read_text())['new_review_candidates'], 0)
+        richer = first.replace(b'<title>General discussion</title>',
+             b'<title>General discussion</title><description><![CDATA[<p>Looking for a freelance Python developer with budget $2000</p>]]></description>')
+        daily_intake.run(self.config, self.db, self.out, execute=True,
+                         fetcher=lambda _: richer, now=self.now)
+        self.assertEqual(json.loads(self.out.read_text())['new_review_candidates'], 1)
+        daily_intake.run(self.config, self.db, self.out, execute=True,
+                         fetcher=lambda _: richer, now=self.now)
+        self.assertEqual(json.loads(self.out.read_text())['new_review_candidates'], 0)
+
     def test_source_error_fails_closed(self):
         def broken(_):
             raise ValueError('invalid feed')

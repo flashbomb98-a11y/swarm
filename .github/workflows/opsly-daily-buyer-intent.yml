@@ -9,6 +9,8 @@ on:
     paths:
       - '.github/workflows/opsly-daily-buyer-intent.yml'
       - 'opsly/tools/buyer-intent/sources.public.json'
+      - 'opsly/tools/buyer-intent/rss_adapter.py'
+      - 'opsly/tools/buyer-intent/daily_intake.py'
 
 permissions:
   contents: read

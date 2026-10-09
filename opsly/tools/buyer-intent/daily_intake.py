@@ -39,14 +39,40 @@ def run(sources_file, db_file, output_file, *, execute=False, fetcher=None, now=
     if errors:
         # A source outage must not generate a misleading clean/empty report.
         raise RuntimeError('source collection failed: ' + json.dumps(errors))
+    new_review = []
     with pipeline.connect_db(db_file) as db:
-        previous = {r[0] for r in db.execute('SELECT candidate_id FROM candidates')}
+        db.execute('''CREATE TABLE IF NOT EXISTS daily_review_receipts (
+            candidate_id TEXT PRIMARY KEY REFERENCES candidates(candidate_id),
+            first_reported_at TEXT NOT NULL)''')
         stats = pipeline.ingest(prepared, db, now=now)
-        fresh = db.execute("""SELECT candidate_id,source_url,discovered_at,source_label,score,bucket
-            FROM candidates WHERE bucket='review' ORDER BY score DESC, discovered_at DESC""").fetchall()
-    new_review = [{'candidate_id': r[0], 'source_url': r[1], 'observed_at': r[2],
-                   'source_label': r[3], 'score': r[4], 'status': 'UNVERIFIED - manual review required'}
-                  for r in fresh if r[0] not in previous]
+        with db:
+            for item in prepared:
+                try:
+                    record = pipeline.prepare(item, now)
+                except (ValueError, TypeError):
+                    continue
+                candidate_id, url, text, stamp, label, digest, score, bucket = record
+                # Re-evaluate candidates even when a prior RSS summary lacked body text.
+                db.execute('''UPDATE OR IGNORE candidates
+                    SET request_text=?, discovered_at=?, source_label=?,
+                        text_hash=?, score=?, bucket=?
+                    WHERE candidate_id=? AND source_url=?''',
+                    (text, stamp, label, digest, score, bucket, candidate_id, url))
+                if bucket != 'review':
+                    continue
+                if not db.execute('''SELECT 1 FROM candidates
+                    WHERE candidate_id=? AND source_url=?''', (candidate_id, url)).fetchone():
+                    continue
+                inserted = db.execute('''INSERT OR IGNORE INTO daily_review_receipts
+                    (candidate_id, first_reported_at) VALUES (?, ?)''',
+                    (candidate_id, now.isoformat()))
+                if inserted.rowcount:
+                    new_review.append({
+                        'candidate_id': candidate_id, 'source_url': url,
+                        'observed_at': stamp, 'source_label': label,
+                        'score': score, 'status': 'UNVERIFIED - manual review required'
+                    })
+    new_review.sort(key=lambda item: (-item['score'], item['source_url']))
     result = {
         'run_at_utc': now.isoformat(),
         'mode': 'execute',

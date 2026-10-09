@@ -6,6 +6,8 @@ This adapter never connects to the internet. Collection/permission is a distinct
 import argparse
 import hashlib
 import json
+import html
+import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
@@ -58,7 +60,10 @@ def candidates(xml_bytes, source_label):
                     break
         stamp = _child_text(entry, 'pubDate') or _child_text(entry, 'published') or _child_text(entry, 'updated')
         date = parsedate(stamp)
-        text = _child_text(entry, 'title') or _child_text(entry, 'summary') or _child_text(entry, 'description')
+        title = html.unescape(_child_text(entry, 'title'))
+        body = _child_text(entry, 'description') or _child_text(entry, 'summary') or _child_text(entry, 'content')
+        plain_body = re.sub(r'\s+', ' ', re.sub(r'<[^>]*>', ' ', html.unescape(body))).strip()
+        text = ' '.join(part for part in (title, plain_body) if part).strip()
         if not (urlsplit(link).scheme == 'https' and date and text):
             continue
         identity = hashlib.sha256(link.encode('utf-8')).hexdigest()[:24]
