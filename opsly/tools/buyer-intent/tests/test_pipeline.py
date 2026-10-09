@@ -52,6 +52,23 @@ class TestPipeline(unittest.TestCase):
         stats = p.ingest([candidate(request_text='We offer cheap web design today!')], self.db, NOW)
         self.assertEqual(stats['reject_promotion'], 1)
 
+    def test_freelancers_seeking_work_are_not_customer_leads(self):
+        offers = [
+            'SEEKING WORK | Looking for web design projects. Budget 500 EUR.',
+            'Available for hire: freelance web designer, budget negotiable.',
+            'Suche Aufträge für Webdesign. Budget ab 500 EUR.',
+            "I'm seeking clients for landing page design, urgent inquiries welcome.",
+        ]
+        for text in offers:
+            with self.subTest(text=text):
+                self.assertEqual(p.score_intent(text, NOW, NOW), (0, 'reject_supplier'))
+
+    def test_explicit_client_seeking_freelancer_still_qualifies(self):
+        text = 'SEEKING FREELANCER | Need a landing page for my business. Budget 800 EUR.'
+        score, bucket = p.score_intent(text, NOW, NOW)
+        self.assertGreaterEqual(score, 45)
+        self.assertEqual(bucket, 'review')
+
     def test_weak_request_watch(self):
         self.assertEqual(p.ingest([candidate(request_text='Is this a good software stack?')], self.db, NOW)['watch'], 1)
 
