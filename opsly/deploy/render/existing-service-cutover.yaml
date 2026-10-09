@@ -1,0 +1,25 @@
+# OPSLY NEW SWARM – controlled handoff of EXISTING Render test service.
+# This describes the existing Render web service by name; it is NOT a request
+# to create a database or use a paid plan. Blueprint sync must be reviewed.
+#
+# IMPORTANT: Do not auto-sync while the service is in active use.
+# Current secrets DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, SWARM_API_TOKEN
+# stay in Render's existing Environment. No values are committed here.
+#
+# Read opsly/PRODUCTION_CUTOVER_RUNBOOK.md before an authorized sync.
+services:
+  - type: web
+    name: division-swarm-final-postgres
+    runtime: go
+    plan: free
+    region: frankfurt
+    repo: https://github.com/flashbomb98-a11y/swarm
+    branch: master
+    autoDeployTrigger: off
+    buildCommand: go build -o swarm ./cmd/swarm && go build -o opsly-portgate ./opsly/deploy/render/cmd/portgate
+    startCommand: bash opsly/deploy/render/start.sh
+    # This HTTP endpoint says the handoff gate is bound to the public port.
+    # It does NOT mean Swarm has completed ownership acquisition.
+    # The application API returns 503 until the old Swarm releases the lock.
+    healthCheckPath: /_opsly/gate/live
+    maxShutdownDelaySeconds: 60
