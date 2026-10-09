@@ -57,8 +57,8 @@ func TestRootBlueprintIsFreeNeonOnly(t *testing.T) {
 		t.Fatal("port gate build and readiness check must be configured")
 	}
 	type value struct {
-		text string
-		sync *bool
+		text      string
+		sync      *bool
 		generated bool
 	}
 	vars := map[string]value{}
