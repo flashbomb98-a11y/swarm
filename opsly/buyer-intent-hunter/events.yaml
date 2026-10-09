@@ -1,0 +1,12 @@
+intent.candidate.received:
+  candidate_id: text
+  source_url: text
+  request_text: text
+  discovered_at: text
+  source_label: text
+intent.review.queued:
+  candidate_id: text
+  source_url: text
+  request_text: text
+  discovered_at: text
+  source_label: text
