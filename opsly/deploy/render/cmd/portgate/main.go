@@ -131,6 +131,9 @@ func runChild(ctx context.Context, executable string, args []string, delay time.
 		if !ownershipConflict(err, string(out.buf)) {
 			return fmt.Errorf("swarm exited without retryable ownership conflict: %w", err)
 		}
+		if attempts >= 59 {
+			return fmt.Errorf("startup ownership remained locked after 60 bounded attempts")
+		}
 		log.Printf("swarm store ownership held by previous deployment; waiting for clean release (attempt %d)", attempts+1)
 		timer := time.NewTimer(delay)
 		select {
