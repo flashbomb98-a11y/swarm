@@ -44,6 +44,22 @@ jobs:
             --db .opsly-runtime/buyer-intent.sqlite \
             --report opsly-review-report.json \
             --execute
+      - name: Optional authenticated Division intake handoff (disabled by default)
+        if: ${{ vars.OPSLY_ENABLE_RPC_PUSH == 'true' }}
+        env:
+          OPSLY_SWARM_API_TOKEN: ${{ secrets.OPSLY_SWARM_API_TOKEN }}
+          OPSLY_SWARM_URL: ${{ vars.OPSLY_SWARM_URL }}
+          OPSLY_SWARM_BUNDLE_HASH: ${{ vars.OPSLY_SWARM_BUNDLE_HASH }}
+        run: |
+          set -euo pipefail
+          test -n "$OPSLY_SWARM_API_TOKEN"
+          test -n "$OPSLY_SWARM_URL"
+          test -n "$OPSLY_SWARM_BUNDLE_HASH"
+          python3 -B opsly/tools/buyer-intent/bridge.py \
+            --db .opsly-runtime/buyer-intent.sqlite \
+            --api-url "$OPSLY_SWARM_URL" \
+            --bundle-hash "$OPSLY_SWARM_BUNDLE_HASH" \
+            --execute
       - name: Upload URL-only unverified review report (7 days)
         uses: actions/upload-artifact@v4
         with:
