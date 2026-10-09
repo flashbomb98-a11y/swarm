@@ -44,3 +44,12 @@ As of 2026-10-09. Only the new Division Swarm project is in scope. **Do not reus
 - Current safety: all buyer evidence remains unverified and outreach not sent. Test fixture is explicitly synthetic; no production buyer discovery or business sales verified.
 
 **Remaining blockers:** live allowed source registration/permissions, persistent feed scheduler and alerting, approved LLM costs (if using LLM-based scoring), Render change from upstream GitHub repo to own fork, single-owner PostgreSQL cutover and independent live event readback, Render free database expiry/backup. None of those is proven operational by CI.
+
+## Latest full regression verification (2026-10-09)
+
+- Source-controlled optional, allowlisted HTTPS RSS collector; `sources.example.json` remains `[]`. No public feed has been fetched or scheduled.
+- Evidence JSONL, SQLite, XML, .env, secrets and caches are ignored in the public repository under `opsly/tools/buyer-intent/.gitignore`.
+- Safe Render launcher `opsly/deploy/render/start.sh` has been checked for Bash syntax and refuses to start when DB_HOST or other required variables are missing. It was **not deployed or executed against a database**.
+- GitHub CI [run 37923437596](https://github.com/flashbomb98-a11y/swarm/actions/runs/37923437596) passed all four steps: Render launcher dry preflight, Division `verify --portable`, synthetic `swarm test` (`scenarios=1`), Python tests (`28 tests, OK`).
+- No real customer requests, payments, scheduled feed polling or production event processing are claimed.
+- Next: approved data source, dedicated persistent scheduler, single-owner Render fork cutover after real backup and user approval, production API integration/readback; Render free PostgreSQL expires 2026-11-08.
