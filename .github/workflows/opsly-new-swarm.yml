@@ -9,6 +9,10 @@ on:
       - '.github/workflows/opsly-new-swarm.yml'
   workflow_dispatch:
 
+concurrency:
+  group: opsly-intake-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: read
 
