@@ -31,5 +31,7 @@ jobs:
           cache: false
       - name: Verify buyer intent Division contract
         run: go run ./cmd/swarm verify opsly/buyer-intent-hunter --portable
+      - name: Exercise synthetic intake event in isolated runtime
+        run: go run ./cmd/swarm test opsly/buyer-intent-hunter
       - name: Python unit tests (application has no network calls)
         run: python3 -B -m unittest discover -s opsly/tools/buyer-intent/tests -p 'test_*.py' -v
