@@ -3,15 +3,5 @@
     "label": "hn-freelance",
     "url": "https://hnrss.org/whoishiring/freelance",
     "approved_host": "hnrss.org"
-  },
-  {
-    "label": "hn-ask-freelancer",
-    "url": "https://hnrss.org/ask?q=freelancer",
-    "approved_host": "hnrss.org"
-  },
-  {
-    "label": "hn-comments-need-dev",
-    "url": "https://hnrss.org/newcomments?q=need%20a%20developer",
-    "approved_host": "hnrss.org"
   }
 ]
