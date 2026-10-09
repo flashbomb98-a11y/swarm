@@ -17,7 +17,7 @@ services:
     plan: free
     repo: https://github.com/flashbomb98-a11y/swarm
     branch: master
-    autoDeployTrigger: off
+    autoDeployTrigger: 'off'
     buildCommand: go build -o swarm ./cmd/swarm && go build -o opsly-portgate ./opsly/deploy/render/cmd/portgate
     startCommand: bash opsly/deploy/render/start.sh
     healthCheckPath: /_opsly/gate/ready
