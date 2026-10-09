@@ -18,6 +18,18 @@ BUYER_SIGNALS = (
     (r'\b(?:asap|urgent|this week|diese woche|dringend|sofort|deadline)\b', 12),
 )
 PROMOTION = re.compile(r'\b(?:we offer|our services|buy my|discount|promo code|ich biete|wir bieten|jetzt kaufen|verkaufe)\b', re.I)
+# Posts by providers looking for work are not requests from paying buyers.
+# The source's "SEEKING WORK" entries must never become customer leads.
+SUPPLIER_REQUEST = re.compile(
+    r"(?im)^\s*(?:\[[^\]\n]{1,40}\]\s*)?"
+    r"(?:(?:i'm|i am|we're|we are|freelancer|developer|designer)\s+)?"
+    r"(?:seeking\s+(?:work|clients?|contracts?|projects?|employment)|"
+    r"looking\s+for\s+(?:work|jobs?|clients?|contracts?|projects?)|"
+    r"(?:available|open)\s+(?:for|to)\s+(?:hire|work)|"
+    r"for\s+hire|"
+    r"suche\s+(?:arbeit|jobs?|kunden|auftr[aä]ge)|"
+    r"biete\s+(?:meine\s+)?(?:dienste|dienstleistungen)\s+an)\b"
+)
 TRACKING = {'fbclid', 'gclid', 'msclkid', 'ref_src'}
 
 
@@ -56,6 +68,8 @@ def score_intent(text, discovered_at, now):
     """Deterministic heuristic; human verification is always required."""
     if PROMOTION.search(text):
         return 0, 'reject_promotion'
+    if SUPPLIER_REQUEST.search(text):
+        return 0, 'reject_supplier'
     score = sum(weight for regex, weight in BUYER_SIGNALS if re.search(regex, text, re.I))
     age = now - discovered_at
     if age > timedelta(days=30):
@@ -103,7 +117,7 @@ def ingest(items, db, now=None):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
         raise ValueError('now must be timezone-aware')
-    stats = {'inserted': 0, 'duplicates': 0, 'invalid': 0, 'review': 0, 'watch': 0, 'stale': 0, 'reject_promotion': 0}
+    stats = {'inserted': 0, 'duplicates': 0, 'invalid': 0, 'review': 0, 'watch': 0, 'stale': 0, 'reject_promotion': 0, 'reject_supplier': 0}
     with db:
         for item in items:
             try:
