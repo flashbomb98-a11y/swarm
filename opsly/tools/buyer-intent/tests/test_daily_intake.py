@@ -61,6 +61,23 @@ class DailyDigestTests(unittest.TestCase):
                              fetcher=lambda _: self.feed, now=self.now)
         self.assertEqual(json.loads(self.out.read_text())['new_review_candidates'], 0)
 
+    def test_job_seeker_post_is_not_sold_as_a_customer_lead(self):
+        self.feed = b'''<rss><channel>
+          <item><title>SEEKING WORK | Looking for website projects with budget</title>
+            <link>https://news.ycombinator.com/item?id=201</link>
+            <pubDate>Fri, 09 Oct 2026 11:00:00 GMT</pubDate></item>
+          <item><title>SEEKING FREELANCER | Need a landing page. Budget $600</title>
+            <link>https://news.ycombinator.com/item?id=202</link>
+            <pubDate>Fri, 09 Oct 2026 11:00:00 GMT</pubDate></item>
+        </channel></rss>'''
+        daily_intake.run(self.config, self.db, self.out, execute=True,
+                         fetcher=lambda _: self.feed, now=self.now)
+        report = json.loads(self.out.read_text(encoding='utf-8'))
+        self.assertEqual(report['statistics']['reject_supplier'], 1)
+        self.assertEqual(report['new_review_candidates'], 1)
+        self.assertEqual(report['leads'][0]['source_url'],
+                         'https://news.ycombinator.com/item?id=202')
+
     def test_source_error_fails_closed(self):
         def broken(_):
             raise ValueError('invalid feed')
