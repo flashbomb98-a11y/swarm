@@ -5,6 +5,7 @@ on:
     branches: [opsly/new-swarm]
     paths:
       - 'opsly/buyer-intent-hunter/**'
+      - 'opsly/tools/buyer-intent/**'
       - '.github/workflows/opsly-new-swarm.yml'
   workflow_dispatch:
 
@@ -27,4 +28,4 @@ jobs:
       - name: Verify buyer intent Division contract
         run: go run ./cmd/swarm verify opsly/buyer-intent-hunter --portable
       - name: Python unit tests (application has no network calls)
-        run: python3 -B -m unittest discover -s opsly/buyer-intent-hunter/tests -p 'test_*.py' -v
+        run: python3 -B -m unittest discover -s opsly/tools/buyer-intent/tests -p 'test_*.py' -v
