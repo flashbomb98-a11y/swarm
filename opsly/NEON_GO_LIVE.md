@@ -52,8 +52,14 @@ must not be retried via an insecure workaround.
 5. Verify the new input event and `intent.review.queued` are durably
    recorded. Never report synthetic test records as real buyers.
 6. Enable authenticated GitHub Actions -> Division RPC forwarding only after
-   confirming the bundle hash and securely provisioning GitHub credentials.
-   Currently the existing daily collector runs separately on GitHub.
+   confirming the canonical runtime bundle hash, source/privacy policy and
+   securely provisioning GitHub credentials. The workflow's optional publication
+   stage is implemented but DISABLED by default. GitHub repository settings:
+   Actions variable `OPSLY_ENABLE_RPC_PUSH=true` (only after verification),
+   variables `OPSLY_SWARM_URL` and `OPSLY_SWARM_BUNDLE_HASH`, and secret
+   `OPSLY_SWARM_API_TOKEN` matching Render's generated token. Never commit the
+   bearer token or put it in a public issue. The collector works independently
+   before this toggle; unverified evidence enters review, never outreach.
 7. Confirm acceptable source usage, data retention, backlog and alerting.
 8. Verify cost-free status and plan for free-tier sleeping/quotas. Render Free
    cannot guarantee nonstop 24/7 compute.
