@@ -28,6 +28,8 @@ jobs:
       PYTHONDONTWRITEBYTECODE: '1'
     steps:
       - uses: actions/checkout@v4
+      - name: Test offline intake and data protection before collection
+        run: python3 -B -m unittest discover -s opsly/tools/buyer-intent/tests -p 'test_*.py' -v
       - name: Restore prior deduplication state
         uses: actions/cache/restore@v4
         with:
