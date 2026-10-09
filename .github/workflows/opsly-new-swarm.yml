@@ -6,6 +6,7 @@ on:
     paths:
       - 'opsly/buyer-intent-hunter/**'
       - 'opsly/tools/buyer-intent/**'
+      - 'opsly/deploy/render/**'
       - '.github/workflows/opsly-new-swarm.yml'
   workflow_dispatch:
 
@@ -29,6 +30,17 @@ jobs:
         with:
           go-version-file: go.mod
           cache: false
+      - name: Validate safe Render launcher (no live start)
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash -n opsly/deploy/render/start.sh
+          set +e
+          env -u DB_HOST -u DB_NAME -u DB_USER -u DB_PASSWORD -u SWARM_API_TOKEN bash opsly/deploy/render/start.sh > /tmp/opsly-expected-block 2>&1
+          code=$?
+          set -e
+          test "$code" -eq 78
+          grep -q 'DB_HOST' /tmp/opsly-expected-block
       - name: Verify buyer intent Division contract
         run: go run ./cmd/swarm verify opsly/buyer-intent-hunter --portable
       - name: Exercise synthetic intake event in isolated runtime
