@@ -41,6 +41,10 @@ jobs:
           set -e
           test "$code" -eq 78
           grep -q 'DB_HOST' /tmp/opsly-expected-block
+      - name: Verify safe Render gate tests
+        run: go test ./opsly/deploy/render/cmd/portgate -count=1
+      - name: Compile portgate binary
+        run: go build -o /tmp/opsly-portgate ./opsly/deploy/render/cmd/portgate
       - name: Verify buyer intent Division contract
         run: go run ./cmd/swarm verify opsly/buyer-intent-hunter --portable
       - name: Exercise synthetic intake event in isolated runtime
