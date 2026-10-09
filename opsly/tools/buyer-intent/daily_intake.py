@@ -30,15 +30,17 @@ def run(sources_file, db_file, output_file, *, execute=False, fetcher=None, now=
     output_file.parent.mkdir(parents=True, exist_ok=True)
     prepared = []
     errors = []
+    successful_sources = []
     for source in sources:
         try:
             raw = fetcher(source)
             prepared.extend(rss_adapter.candidates(raw, source['label']))
+            successful_sources.append(source['label'])
         except (ValueError, OSError, UnicodeError) as exc:
             errors.append({'source': source['label'], 'error_type': type(exc).__name__})
-    if errors:
-        # A source outage must not generate a misleading clean/empty report.
-        raise RuntimeError('source collection failed: ' + json.dumps(errors))
+    if not successful_sources:
+        # Total source outage must never become a misleading empty success report.
+        raise RuntimeError('all configured sources failed: ' + json.dumps(errors))
     new_review = []
     with pipeline.connect_db(db_file) as db:
         db.execute('''CREATE TABLE IF NOT EXISTS daily_review_receipts (
@@ -77,6 +79,9 @@ def run(sources_file, db_file, output_file, *, execute=False, fetcher=None, now=
         'run_at_utc': now.isoformat(),
         'mode': 'execute',
         'source_labels': [f['label'] for f in sources],
+        'successful_sources': successful_sources,
+        'failed_sources': errors,
+        'collection_status': 'degraded' if errors else 'ok',
         'items_in_feed': len(prepared),
         'new_review_candidates': len(new_review),
         'statistics': stats,
