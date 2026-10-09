@@ -2,7 +2,7 @@ name: OPSLY New Swarm — isolated intake checks
 
 on:
   push:
-    branches: [opsly/new-swarm]
+    branches: [master, opsly/new-swarm]
     paths:
       - 'opsly/buyer-intent-hunter/**'
       - 'opsly/tools/buyer-intent/**'
