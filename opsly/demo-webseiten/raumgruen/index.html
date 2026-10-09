@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f5f6ed" />
+  <meta name="description" content="Mustervorlage für eine professionelle Webseite eines Gartenpflegebetriebs. Fiktives Beispiel für Opsly Webseiten-Schnellstart." />
+  <title>RAUMGRÜN — Gartenpflege mit Gefühl | Opsly-Muster</title>
+  <style>
+    :root{--ink:#17382e;--green:#285843;--moss:#75916b;--paper:#f6f7ef;--white:#fffdf8;--line:#d8dfce;--muted:#60736a;--coral:#f8c8a2;--radius:22px;scroll-behavior:smooth}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+    button,input,textarea{font:inherit}button{cursor:pointer}
+    a{color:inherit;text-decoration:none}
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #bd8059;outline-offset:4px}
+    .demo{background:var(--ink);color:#f1f6e8;min-height:35px;display:flex;align-items:center;justify-content:center;text-align:center;padding:7px 20px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:730;gap:9px}
+    .demo .spark{color:#fbd39b}
+    .wrap{width:min(1240px,calc(100% - 88px));margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(246,247,239,.94);border-bottom:1px solid rgba(40,88,67,.12);backdrop-filter:blur(18px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:83px;gap:25px}
+    .logo{font-weight:850;letter-spacing:-.075em;font-size:29px;display:flex;align-items:center;gap:10px;line-height:1}
+    .logo .mark{width:29px;height:29px;display:grid;place-items:center;background:#dbe8d2;color:var(--green);border-radius:50%}
+    .logo small{font-weight:520;font-size:9px;letter-spacing:.15em;color:#678075;display:block;margin:7px 0 0 2px;text-transform:uppercase}
+    .links{display:flex;align-items:center;gap:37px;font-size:13px;font-weight:700}
+    .links a:not(.nav-cta):hover{color:#678075}
+    .nav-cta,.primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;background:var(--ink);color:white!important;border:1px solid var(--ink);border-radius:99px;padding:13px 23px;font-size:13px;font-weight:740;transition:transform .2s,background .2s;white-space:nowrap}
+    .nav-cta:hover,.primary:hover{background:#386e50;transform:translateY(-2px)}
+    .menu-toggle{display:none;border:1px solid var(--line);background:none;border-radius:12px;padding:9px;line-height:0}
+    .hero{padding:60px 0 74px;display:grid;grid-template-columns:1fr 1.07fr;align-items:center;gap:65px;min-height:710px}
+    .eyebrow{display:flex;align-items:center;gap:11px;color:var(--green);text-transform:uppercase;font-weight:760;letter-spacing:.2em;font-size:11px}
+    .eyebrow::before{content:"";width:27px;height:2px;background:#80aa7c}
+    h1,h2,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.055em}
+    h1{font-size:clamp(52px,5.2vw,90px);line-height:1.075;margin:28px 0 24px;max-width:660px}
+    h1 em{font-weight:400;color:#77916b}
+    .hero p{color:#576e62;font-size:17px;line-height:1.95;max-width:480px;margin-bottom:33px}
+    .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:22px}
+    .plain-link{border-bottom:1px solid var(--green);font-size:13px;font-weight:760;padding:9px 0}
+    .trust-line{border-top:1px solid #d9e0d5;margin-top:58px;padding-top:20px;display:flex;align-items:center;gap:15px;font-size:12px;color:#718077}
+    .round-sun{display:grid;place-items:center;width:37px;height:37px;border-radius:50%;background:#e9ebd2;color:#77916b;font-size:23px}
+    .hero-art{position:relative;min-height:565px;display:grid;place-items:center}
+    .art-blob{position:absolute;inset:10px 0 18px 25px;background:#dbe5ce;border-radius:50% 47% 43% 40% / 36% 55% 38% 56%;transform:rotate(3deg)}
+    .visual{position:relative;width:100%;height:auto;max-height:590px;filter:drop-shadow(0 20px 27px rgba(20,57,43,.09))}
+    .floating{position:absolute;right:-17px;bottom:26px;background:var(--white);padding:18px 22px;border-radius:15px;box-shadow:0 14px 40px rgba(21,62,40,.1);display:flex;align-items:center;gap:12px;font-size:12px;color:var(--muted)}
+    .floating b{display:block;color:var(--ink);font-size:15px}
+    .pill-icon{display:grid;place-items:center;width:35px;height:35px;background:#e8f0e2;border-radius:50%;font-size:18px;color:var(--green)}
+    .mini{padding:15px 0 19px;background:#eaf0e5;border-top:1px solid #dde6d9;border-bottom:1px solid #dde6d9}
+    .mini .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;color:#48654f;font-size:12px;font-weight:740;letter-spacing:.07em;text-transform:uppercase}
+    .mini span{display:flex;gap:11px;align-items:center}
+    .mini span::before{content:"✳";font-size:16px;color:#80a57b}
+    section{scroll-margin-top:104px}
+    .section{padding:106px 0}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:22px;margin-bottom:42px}
+    h2{font-size:clamp(41px,4vw,67px);line-height:1.12;margin:17px 0 0}
+    .section-head>p{color:#66796d;max-width:365px;margin:0 0 7px;line-height:1.85;font-size:14px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .service{background:#fffcf6;border:1px solid #e0e5d8;border-radius:17px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+    .service:hover{transform:translateY(-4px);box-shadow:0 15px 26px #18392c0d}
+    .service-art{height:210px;display:grid;place-items:center;position:relative;overflow:hidden}
+    .art-one{background:#e6e8cb}.art-two{background:#d8e5dc}.art-three{background:#e9ded4}
+    .service-art svg{width:100%;height:100%}
+    .service-body{padding:27px 28px 30px}
+    .service-no{font-size:11px;letter-spacing:.16em;color:#83a17f;font-weight:800}
+    .service h3{font-family:Georgia,serif;font-size:27px;font-weight:400;letter-spacing:-.04em;line-height:1.2;margin:13px 0 10px}
+    .service p{font-size:13px;color:#64776b;line-height:1.8;margin:0}
+    .difference{padding:0 0 105px}
+    .split{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--ink);color:#f4f8ef;border-radius:23px;overflow:hidden}
+    .split-copy{padding:72px 62px 78px}
+    .split .eyebrow{color:#bdd6b4}.split .eyebrow::before{background:#bdd6b4}
+    .split h2{font-size:clamp(40px,3.8vw,65px);margin:18px 0 22px}
+    .split p{max-width:400px;font-size:14px;line-height:1.95;color:#c7d8ca}
+    .split-visual{background:linear-gradient(160deg,#66896c,#a5b592);position:relative;min-height:450px;overflow:hidden;display:flex;align-items:end;justify-content:center}
+    .split-visual svg{width:100%;max-width:640px;height:auto;position:absolute;bottom:0}
+    .step-row{display:grid;grid-template-columns:repeat(3,1fr);gap:27px;margin-top:42px}
+    .step{padding:25px 28px;border-top:1px solid #bfcfbd}
+    .step-label{font-family:Georgia,serif;color:#85a27b;font-size:35px}
+    .step h3{font-size:17px;margin:15px 0 9px}.step p{font-size:13px;color:#60766a;line-height:1.8}
+    .contact-section{background:#eaf0e5;padding:102px 0}
+    .contact-grid{display:grid;grid-template-columns:.83fr 1.17fr;gap:90px}
+    .contact-grid h2{margin-bottom:21px}
+    .contact-grid .intro{color:#5d7466;line-height:1.9;max-width:360px;font-size:15px}
+    .contact-meta{margin-top:45px;border-top:1px solid #ccdacc;padding-top:25px;font-size:12px;color:#708073}
+    .contact-card{background:var(--white);padding:40px;border-radius:20px;border:1px solid #d9e1d6;box-shadow:0 12px 40px #30513e0a}
+    .contact-card h3{font-family:Georgia,serif;font-weight:400;letter-spacing:-.03em;font-size:28px;margin:0 0 20px}
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}.field.full{grid-column:1/-1}
+    label{color:#416351;font-size:12px;font-weight:720}
+    input,textarea{width:100%;padding:14px 16px;border-radius:9px;border:1px solid #d4ded0;background:#fbfcf7;color:var(--ink);outline:none}
+    textarea{resize:vertical;min-height:118px}input:focus,textarea:focus{border-color:#729776}
+    .form-foot{display:flex;justify-content:space-between;align-items:center;gap:18px}.form-foot p{font-size:11px;color:#799081;margin:0;max-width:200px;line-height:1.5}
+    footer{background:#16352b;color:#dbe8d7;padding:42px 0 34px}
+    .footer-content{display:flex;justify-content:space-between;gap:30px;align-items:center}
+    footer .logo{font-size:24px;color:white}footer .logo small{color:#9dbbaa}
+    .footnote{font-size:12px;color:#a9c0af;max-width:390px;text-align:right}
+    .overlay{position:fixed;inset:0;background:#0e271ed9;display:none;align-items:center;justify-content:center;z-index:50;padding:20px}
+    .overlay.open{display:flex}.modal{background:var(--white);border-radius:19px;padding:35px;width:min(560px,100%);max-height:90vh;overflow:auto;box-shadow:0 22px 70px #0004}
+    .modal h3{font:38px/1.1 Georgia,serif;letter-spacing:-.05em;margin:15px 0}.modal p{font-size:13px;color:#5c7063;line-height:1.7}.modal pre{white-space:pre-wrap;font:13px/1.7 system-ui,sans-serif;background:#eef3e9;border-radius:9px;padding:20px;max-height:270px;overflow:auto;color:#244537}
+    .modal-buttons{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}.secondary{background:transparent;border:1px solid #9eb49c;border-radius:99px;padding:13px 20px;color:#244537;font-weight:720}
+    @media(max-width:970px){.wrap{width:min(100% - 42px,1240px)}.hero{grid-template-columns:1fr 1fr;gap:25px}.hero-art{min-height:440px}.floating{right:0}.split-copy{padding:55px 36px}.contact-grid{gap:40px}}
+    @media(max-width:760px){.nav{height:69px}.links{display:none;position:absolute;top:69px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 23px 26px}.links.open{display:flex}.links a{padding:13px 10px}.links .nav-cta{margin-top:6px}.menu-toggle{display:grid}.hero{padding:40px 0 60px;display:flex;flex-direction:column;align-items:stretch;min-height:unset}.hero h1{font-size:clamp(53px,13vw,70px)}.hero p{font-size:15px}.hero-art{min-height:0;max-width:550px;width:100%;align-self:center}.visual{max-height:480px}.floating{right:5px;bottom:10px}.trust-line{margin-top:35px}.section{padding:74px 0}.section-head{align-items:start;flex-direction:column;gap:15px}.cards,.step-row{grid-template-columns:1fr}.service-art{height:185px}.service-art svg{width:100%;height:100%}.difference{padding-bottom:70px}.split{grid-template-columns:1fr}.split-copy{padding:50px 30px}.split-visual{min-height:300px}.step-row{gap:0}.contact-section{padding:70px 0}.contact-grid{grid-template-columns:1fr;gap:34px}.contact-card{padding:25px}.footer-content{flex-direction:column;align-items:flex-start}.footnote{text-align:left}}
+    @media(max-width:460px){.wrap{width:calc(100% - 34px)}.hero-actions{gap:10px}.hero h1{font-size:53px}.section h2,.contact-grid h2{font-size:43px}.fields{grid-template-columns:1fr;gap:0}.form-foot{align-items:stretch;flex-direction:column}.form-foot .primary{width:100%}.service-body{padding:25px}.floating{transform:scale(.84);transform-origin:bottom right}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="demo"><span class="spark">✳</span> OPSLY MUSTERWEBSITE · FIKTIVER BETRIEB · KEINE ECHTE KONTAKTADRESSE</div>
+  <header>
+    <div class="wrap nav">
+      <a class="logo" href="#start" aria-label="Raumgrün Startseite"><span class="mark" aria-hidden="true">✿</span><span>raumgrün.<small>Gärten zum Wohlfühlen</small></span></a>
+      <nav class="links" id="nav-links" aria-label="Hauptnavigation"><a href="#leistungen">Leistungen</a><a href="#ueber-uns">Unser Ansatz</a><a href="#ablauf">So läuft’s</a><a class="nav-cta" href="#kontakt">Garten anfragen <span aria-hidden="true">↗</span></a></nav>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="nav-links"><svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+  <main>
+    <section class="wrap hero" id="start">
+      <div>
+        <div class="eyebrow">Gartenpflege mit Gefühl</div>
+        <h1>Mehr Zeit zum <em>Durchatmen.</em> Weniger Arbeit im Garten.</h1>
+        <p>Ob ein gepflegter Rasen, frische Beete oder der richtige Schnitt: Wir kümmern uns um die kleinen und großen Dinge, die Ihren Garten besonders machen.</p>
+        <div class="hero-actions"><a class="primary" href="#kontakt">Gartenpflege anfragen <span aria-hidden="true">↗</span></a><a class="plain-link" href="#leistungen">Leistungen entdecken <span aria-hidden="true">→</span></a></div>
+        <div class="trust-line"><span class="round-sun">✳</span><span>Persönlich geplant. Mit Sorgfalt gepflegt.<br/>Ein Garten, der zu Ihrem Alltag passt.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Illustration eines gepflegten Gartens mit Haus und Beeten">
+        <div class="art-blob"></div>
+        <svg class="visual" viewBox="0 0 590 590" role="img" aria-label="Gestalteter Garten mit Baum, Natursteinweg und grüner Pflanzenvielfalt" xmlns="http://www.w3.org/2000/svg">
+          <defs><clipPath id="gardenClip"><path d="M64 100Q120 24 288 28Q487 18 539 155Q581 276 552 413Q519 569 289 558Q60 554 39 388Q17 202 64 100Z"/></clipPath><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#e4eadd"/><stop offset="1" stop-color="#c8d9b7"/></linearGradient><linearGradient id="lawn" x2="0" y2="1"><stop stop-color="#8eae7e"/><stop offset="1" stop-color="#618a62"/></linearGradient><linearGradient id="house" x2="0" y2="1"><stop stop-color="#fffaef"/><stop offset="1" stop-color="#ebdcc7"/></linearGradient></defs>
+          <g clip-path="url(#gardenClip)"><rect width="600" height="600" fill="url(#sky)"/><circle cx="431" cy="101" r="68" fill="#f9f1c5" opacity=".65"/>
+            <path d="M0 334Q139 266 309 296Q460 262 600 337L600 600H0Z" fill="#91a989"/>
+            <path d="M0 402Q137 331 312 354Q500 328 600 400V600H0Z" fill="url(#lawn)"/>
+            <path d="M168 201L338 137L498 197V371H168Z" fill="url(#house)"/><path d="M143 201L330 115L513 201Z" fill="#536f60"/><path d="M168 207L335 135L498 204" fill="none" stroke="#415f51" stroke-width="9"/>
+            <rect x="342" y="221" width="104" height="149" fill="#314f49"/><rect x="353" y="232" width="83" height="127" fill="#7faaa3"/><path d="M394 232V359" stroke="#cbd5c4" stroke-width="5"/>
+            <rect x="198" y="228" width="105" height="93" fill="#35574f"/><rect x="207" y="236" width="87" height="77" fill="#83aea4"/><path d="M249 236V314" stroke="#f2f2de" stroke-width="5"/>
+            <path d="M0 488Q135 410 230 426Q368 455 600 401V600H0Z" fill="#7c9f6b"/>
+            <path d="M397 361Q290 390 269 446Q237 509 195 600H365Q344 534 376 484Q421 434 552 427L600 390V381Q479 393 397 361Z" fill="#e7dfc8"/>
+            <path d="M417 386Q343 416 315 463Q290 514 280 576" fill="none" stroke="#fbf3df" stroke-width="7" opacity=".7"/>
+            <g fill="#406d4c"><ellipse cx="106" cy="352" rx="88" ry="61"/><ellipse cx="70" cy="305" rx="58" ry="55"/><ellipse cx="163" cy="329" rx="75" ry="69"/><ellipse cx="493" cy="360" rx="60" ry="66"/><ellipse cx="551" cy="375" rx="69" ry="65"/></g>
+            <g fill="#5a8958"><ellipse cx="83" cy="330" rx="68" ry="51"/><ellipse cx="162" cy="318" rx="54" ry="52"/><ellipse cx="499" cy="342" rx="54" ry="46"/><ellipse cx="548" cy="356" rx="53" ry="45"/></g>
+            <path d="M102 389L120 190" stroke="#665541" stroke-width="23" stroke-linecap="round"/><path d="M119 240L55 182M124 209L191 156" stroke="#665541" stroke-width="13" stroke-linecap="round"/>
+            <g fill="#497451"><circle cx="89" cy="137" r="87"/><circle cx="39" cy="193" r="74"/><circle cx="154" cy="108" r="79"/><circle cx="167" cy="189" r="66"/></g>
+            <g fill="#6f965e"><circle cx="71" cy="139" r="68"/><circle cx="160" cy="111" r="64"/><circle cx="14" cy="181" r="44"/><circle cx="151" cy="187" r="48"/></g>
+            <g fill="#81a475"><circle cx="87" cy="109" r="34"/><circle cx="183" cy="147" r="27"/><circle cx="32" cy="229" r="35"/></g>
+            <g stroke="#426c49" stroke-width="5" stroke-linecap="round"><path d="M57 525l-15-52M57 525l15-70M57 525l31-55M112 533l-13-58M112 533l22-75M491 507l-18-76M491 507l24-82M540 517l-24-60M540 517l29-76"/></g>
+            <g fill="#c9bf76"><circle cx="42" cy="470" r="8"/><circle cx="73" cy="455" r="7"/><circle cx="88" cy="469" r="8"/><circle cx="98" cy="475" r="6"/></g>
+            <g fill="#eadbad"><circle cx="473" cy="432" r="8"/><circle cx="516" cy="426" r="7"/><circle cx="566" cy="441" r="9"/></g>
+            <g fill="#d3d3a2"><ellipse cx="32" cy="561" rx="55" ry="21"/><ellipse cx="131" cy="576" rx="66" ry="22"/><ellipse cx="523" cy="558" rx="92" ry="22"/></g>
+            <g fill="#759b64"><ellipse cx="14" cy="541" rx="52" ry="25"/><ellipse cx="117" cy="557" rx="67" ry="25"/><ellipse cx="517" cy="539" rx="92" ry="27"/></g>
+            <g fill="#f7e7d8"><circle cx="170" cy="488" r="5"/><circle cx="183" cy="482" r="4"/><circle cx="513" cy="499" r="4"/><circle cx="530" cy="487" r="5"/></g>
+          </g>
+        </svg>
+        <div class="floating"><div class="pill-icon">❧</div><div><b>Natürlich gepflegt.</b>Für ein gutes Gefühl draußen.</div></div>
+      </div>
+    </section>
+    <div class="mini"><div class="wrap"><span>Gartenpflege</span><span>Hecken &amp; Sträucher</span><span>Beetpflege</span><span>Saisonservice</span></div></div>
+    <section class="section wrap" id="leistungen">
+      <div class="section-head"><div><div class="eyebrow">Unsere Leistungen</div><h2>Alles, was Ihren Garten<br/><em>aufblühen lässt.</em></h2></div><p>Jeder Außenbereich ist anders. Deshalb beginnt gute Gartenpflege mit Zuhören – und endet mit einem Ergebnis, das Freude macht.</p></div>
+      <div class="cards">
+        <article class="service"><div class="service-art art-one"><svg viewBox="0 0 380 210" aria-hidden="true"><path d="M0 130Q190 98 380 132V210H0Z" fill="#8bad7a"/><path d="M0 170Q155 119 380 175V210H0Z" fill="#6e986a"/><g stroke="#336546" stroke-linecap="round" stroke-width="6"><path d="M41 174l-9-48M58 170l23-64M95 170l-6-52M128 168l10-61M189 155l7-68M210 159l-9-43M261 170l8-75M291 164l-13-50M334 180l19-61"/></g><g fill="#f2d8b2"><circle cx="32" cy="125" r="8"/><circle cx="80" cy="105" r="7"/><circle cx="138" cy="104" r="7"/><circle cx="195" cy="86" r="8"/><circle cx="269" cy="93" r="6"/><circle cx="352" cy="117" r="7"/></g><path d="M0 193q180-32 380 3" stroke="#bfd1a1" stroke-width="11" fill="none"/></svg></div><div class="service-body"><span class="service-no">01 / FRISCHES GRÜN</span><h3>Rasen &amp; Flächen</h3><p>Regelmäßige Rasenpflege, saubere Kanten und ein gepflegter Gesamteindruck – ohne dass Ihr Wochenende dafür draufgeht.</p></div></article>
+        <article class="service"><div class="service-art art-two"><svg viewBox="0 0 380 210" aria-hidden="true"><rect width="380" height="210" fill="#dceadf"/><path d="M0 171H380V210H0Z" fill="#abbc9e"/><path d="M45 173V118M112 173V110M194 173V120M258 173V114M334 173V118" stroke="#785f48" stroke-width="12"/><g fill="#436e53"><circle cx="48" cy="87" r="51"/><circle cx="115" cy="78" r="57"/><circle cx="194" cy="90" r="52"/><circle cx="263" cy="79" r="56"/><circle cx="334" cy="92" r="52"/></g><g fill="#6d9771"><circle cx="45" cy="72" r="34"/><circle cx="128" cy="68" r="39"/><circle cx="186" cy="73" r="34"/><circle cx="255" cy="61" r="32"/><circle cx="332" cy="80" r="40"/></g><path d="M0 166H380" stroke="#9baa89" stroke-width="5"/></svg></div><div class="service-body"><span class="service-no">02 / KLARE FORMEN</span><h3>Hecken &amp; Gehölze</h3><p>Ein durchdachter Rückschnitt und die passende Pflege geben Ihrem Garten Struktur und lassen Grünflächen ordentlich wirken.</p></div></article>
+        <article class="service"><div class="service-art art-three"><svg viewBox="0 0 380 210" aria-hidden="true"><rect width="380" height="210" fill="#e7ded5"/><path d="M0 164Q165 131 380 172V210H0Z" fill="#bfb09a"/><path d="M14 165Q148 139 366 160" stroke="#7a9368" stroke-width="13" fill="none"/><g stroke="#57805d" stroke-width="6" stroke-linecap="round"><path d="M65 155V69M65 130l-26-31M65 117l30-43M171 157V61M171 125l-27-31M171 114l26-29M278 163V62M278 129l-32-34M278 102l26-33"/></g><g fill="#eab79d"><circle cx="65" cy="63" r="14"/><circle cx="39" cy="95" r="12"/><circle cx="96" cy="71" r="12"/></g><g fill="#e7cf83"><circle cx="171" cy="54" r="15"/><circle cx="145" cy="88" r="12"/><circle cx="197" cy="81" r="13"/></g><g fill="#f8ede0"><circle cx="278" cy="56" r="15"/><circle cx="246" cy="91" r="12"/><circle cx="307" cy="68" r="14"/></g></svg></div><div class="service-body"><span class="service-no">03 / SAISON FÜR SAISON</span><h3>Beete &amp; Pflanzen</h3><p>Von der Beetpflege bis zur saisonalen Vorbereitung: Wir helfen dabei, dass Ihr grüner Lieblingsplatz das ganze Jahr Freude macht.</p></div></article>
+      </div>
+    </section>
+    <section class="difference wrap" id="ueber-uns"><div class="split"><div class="split-copy"><div class="eyebrow">Warum Raumgrün?</div><h2>Ihr Garten.<br/>Unsere <em>Sorgfalt.</em></h2><p>Ein schöner Außenbereich entsteht nicht durch Zufall, sondern durch Aufmerksamkeit. Wir schauen hin, hören zu und planen nur das, was Ihr Garten wirklich braucht.</p><p>Ob einmaliger Einsatz oder regelmäßige Pflege: Sie erhalten eine klare Absprache und ein gutes Gefühl.</p><a class="primary" href="#kontakt" style="margin-top:17px;background:#f4f5e9;color:#244536!important;border-color:#f4f5e9">Über Ihr Projekt sprechen <span aria-hidden="true">↗</span></a></div><div class="split-visual"><svg viewBox="0 0 650 440" aria-hidden="true"><circle cx="435" cy="114" r="117" fill="#e6e5be" opacity=".5"/><path d="M0 290Q185 162 650 265V440H0Z" fill="#3f7256"/><path d="M0 352Q220 249 650 331V440H0Z" fill="#2d5d49"/><path d="M160 440Q203 326 316 264Q350 235 369 151" stroke="#d5c7a2" stroke-width="46" fill="none"/><path d="M160 440Q203 326 316 264Q350 235 369 151" stroke="#f5ecd1" stroke-width="25" fill="none"/><g stroke="#324e39" stroke-width="11" stroke-linecap="round"><path d="M91 305L90 96M495 345L492 137"/></g><g fill="#25573f"><circle cx="90" cy="97" r="84"/><circle cx="34" cy="146" r="68"/><circle cx="158" cy="123" r="71"/><circle cx="489" cy="130" r="99"/><circle cx="555" cy="193" r="67"/></g><g fill="#467756"><circle cx="69" cy="86" r="64"/><circle cx="133" cy="129" r="57"/><circle cx="478" cy="102" r="82"/><circle cx="543" cy="183" r="58"/></g><g fill="#628d61"><circle cx="102" cy="63" r="47"/><circle cx="504" cy="88" r="59"/></g><g fill="#7aa06d"><ellipse cx="31" cy="361" rx="79" ry="36"/><ellipse cx="573" cy="348" rx="104" ry="46"/><ellipse cx="510" cy="410" rx="139" ry="37"/></g><g fill="#f0dbab"><circle cx="60" cy="362" r="8"/><circle cx="96" cy="350" r="7"/><circle cx="536" cy="341" r="9"/><circle cx="584" cy="350" r="7"/></g></svg></div></div></section>
+    <section class="wrap section" id="ablauf"><div class="eyebrow">Einfach &amp; persönlich</div><h2>In drei Schritten<br/>zum schönen Garten.</h2><div class="step-row"><div class="step"><div class="step-label">01.</div><h3>Wünsche besprechen</h3><p>Sie erzählen uns, was ansteht und was Ihnen wichtig ist. Wir hören zu und klären die nächsten Schritte.</p></div><div class="step"><div class="step-label">02.</div><h3>Pflege abstimmen</h3><p>Wir planen den passenden Umfang transparent und stimmen gemeinsam einen Termin ab.</p></div><div class="step"><div class="step-label">03.</div><h3>Draußen genießen</h3><p>Die vereinbarten Arbeiten werden erledigt. Sie genießen Ihren Garten und haben den Kopf frei.</p></div></div></section>
+    <section class="contact-section" id="kontakt"><div class="wrap contact-grid"><div><div class="eyebrow">Kontakt</div><h2>Ihr Garten kann<br/><em>aufatmen.</em></h2><p class="intro">Erzählen Sie uns, was Sie sich wünschen. Wir zeigen Ihnen gern, wie einfach gute Gartenpflege sein kann.</p><div class="contact-meta">✳ Diese Seite ist ein fiktives Verkaufsbeispiel von Opsly.<br/>Es werden keine Formulardaten an einen Server gesendet.</div></div><div class="contact-card"><h3>Was dürfen wir für Sie tun?</h3><form id="request-form"><div class="fields"><div class="field"><label for="name">Ihr Name *</label><input id="name" name="name" required placeholder="Vor- und Nachname" autocomplete="name" maxlength="100"/></div><div class="field"><label for="email">E-Mail-Adresse *</label><input id="email" name="email" type="email" required placeholder="name@beispiel.de" autocomplete="email" maxlength="150"/></div><div class="field full"><label for="service">Worum geht es? *</label><textarea id="service" name="service" required minlength="10" maxlength="1400" placeholder="Zum Beispiel: Mein Garten braucht einen regelmäßigen Schnitt …"></textarea></div></div><div class="form-foot"><p>Demo-Funktion: Ihre Nachricht wird nur lokal als Vorschau angezeigt.</p><button class="primary" type="submit">Anfrage ansehen <span aria-hidden="true">↗</span></button></div></form></div></div></section>
+  </main>
+  <footer><div class="wrap footer-content"><a href="#start" class="logo"><span class="mark" aria-hidden="true">✿</span><span>raumgrün.<small>Musterprojekt von Opsly</small></span></a><div class="footnote">Musterwebseite · Alle Unternehmensangaben sind fiktiv. Für eine reale Veröffentlichung sind Kontaktdaten, Impressum, Datenschutz und alle Leistungsangaben zu ersetzen und zu prüfen.</div></div></footer>
+  <div class="overlay" id="preview" role="dialog" aria-modal="true" aria-labelledby="preview-heading"><div class="modal"><div class="eyebrow">Vorschau, kein Versand</div><h3 id="preview-heading">Ihre Anfrage</h3><p>So könnte eine Nachricht später an einen echten Gartenbetrieb übermittelt werden. Dieses Muster speichert oder verschickt keine Daten.</p><pre id="preview-body"></pre><div class="modal-buttons"><button id="close-preview" class="secondary" type="button">Schließen</button><button id="copy-preview" class="primary" type="button">Text kopieren</button></div></div></div>
+  <script>
+    const menu=document.getElementById('menu-toggle'),links=document.getElementById('nav-links');
+    menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Menü schließen':'Menü öffnen');});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Menü öffnen');}));
+    const form=document.getElementById('request-form'),overlay=document.getElementById('preview'),body=document.getElementById('preview-body'),close=document.getElementById('close-preview'),copy=document.getElementById('copy-preview');
+    let previousFocus=null;
+    const dismiss=()=>{overlay.classList.remove('open');document.body.style.overflow='';if(previousFocus)previousFocus.focus();};
+    form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const n=document.getElementById('name').value.trim(),em=document.getElementById('email').value.trim(),msg=document.getElementById('service').value.trim();body.textContent=`Name: ${n}\nE-Mail: ${em}\n\nAnfrage:\n${msg}`;previousFocus=document.activeElement;overlay.classList.add('open');document.body.style.overflow='hidden';close.focus();});
+    close.addEventListener('click',dismiss);overlay.addEventListener('click',e=>{if(e.target===overlay)dismiss();});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('open'))dismiss();if(e.key==='Tab'&&overlay.classList.contains('open')){const items=[close,copy];if(e.shiftKey&&document.activeElement===close){e.preventDefault();copy.focus();}else if(!e.shiftKey&&document.activeElement===copy){e.preventDefault();close.focus();}}});
+    copy.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(body.textContent);copy.textContent='Kopiert ✓';setTimeout(()=>copy.textContent='Text kopieren',1700);}catch{copy.textContent='Bitte Text markieren';}});
+  </script>
+</body>
+</html>
