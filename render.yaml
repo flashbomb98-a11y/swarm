@@ -1,25 +1,35 @@
-# OPSLY NEW SWARM – controlled handoff of EXISTING Render test service.
-# This describes the existing Render web service by name; it is NOT a request
-# to create a database or use a paid plan. Blueprint sync must be reviewed.
+# OPSLY NEW SWARM: ISOLATED NEON DEPLOYMENT BLUEPRINT
 #
-# IMPORTANT: Do not auto-sync while the service is in active use.
-# Current secrets DB_HOST, DB_NAME, DB_USER, DB_PASSWORD, SWARM_API_TOKEN
-# stay in Render's existing Environment. No values are committed here.
+# Creates ONLY one Render free Go web service, no Render database, no disks,
+# no external paid services. The existing division-swarm-final-postgres and
+# division-swarm-pg16 resources are intentionally NOT included or modified.
 #
-# Read opsly/PRODUCTION_CUTOVER_RUNBOOK.md before an authorized sync.
+# Neon direct connection (not transaction pooler) is required by Swarm's
+# session-level PostgreSQL advisory lock. No password is committed to GitHub.
+#
+# Initial Render Blueprint setup prompts for DB_PASSWORD securely.
+# Get this from your Neon console – do not post it in chat.
 services:
   - type: web
-    name: division-swarm-final-postgres
+    name: opsly-new-buyer-intent
     runtime: go
-    plan: free
     region: frankfurt
+    plan: free
     repo: https://github.com/flashbomb98-a11y/swarm
     branch: master
     autoDeployTrigger: off
     buildCommand: go build -o swarm ./cmd/swarm && go build -o opsly-portgate ./opsly/deploy/render/cmd/portgate
     startCommand: bash opsly/deploy/render/start.sh
-    # This HTTP endpoint says the handoff gate is bound to the public port.
-    # It does NOT mean Swarm has completed ownership acquisition.
-    # The application API returns 503 until the old Swarm releases the lock.
-    healthCheckPath: /_opsly/gate/live
+    healthCheckPath: /_opsly/gate/ready
     maxShutdownDelaySeconds: 60
+    envVars:
+      - key: DB_HOST
+        value: ep-dawn-silence-b193cq88.c-5.eu-central-1.aws.neon.tech
+      - key: DB_NAME
+        value: neondb
+      - key: DB_USER
+        value: neondb_owner
+      - key: DB_PASSWORD
+        sync: false
+      - key: SWARM_API_TOKEN
+        generateValue: true
