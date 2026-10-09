@@ -1,0 +1,15 @@
+name: opsly buyer intent intake synthetic smoke
+steps:
+  - publish: intent.candidate.received
+    payload:
+      candidate_id: fixture-001
+      source_url: https://example.org/fixture-001
+      request_text: Development fixture, NOT verified buyer intent
+      discovered_at: "2026-10-09T10:00:00Z"
+      source_label: test-fixture
+expect:
+  events:
+    include: [intent.review.queued]
+  entities:
+    - type: candidate
+      current_state: done
