@@ -7,6 +7,7 @@ on:
       - 'opsly/buyer-intent-hunter/**'
       - 'opsly/tools/buyer-intent/**'
       - 'opsly/deploy/render/**'
+      - 'render.yaml'
       - '.github/workflows/opsly-new-swarm.yml'
   workflow_dispatch:
 
@@ -42,7 +43,7 @@ jobs:
           test "$code" -eq 78
           grep -q 'DB_HOST' /tmp/opsly-expected-block
       - name: Verify safe Render gate tests
-        run: go test ./opsly/deploy/render/cmd/portgate -count=1
+        run: go test ./opsly/deploy/render/... -count=1
       - name: Compile portgate binary
         run: go build -o /tmp/opsly-portgate ./opsly/deploy/render/cmd/portgate
       - name: Verify buyer intent Division contract
