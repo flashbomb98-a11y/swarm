@@ -1,0 +1,36 @@
+# NEW Division Swarm — project boundaries and technical baseline
+
+As of 2026-10-09. Only the new Division Swarm project is in scope. **Do not reuse** old Opsly Market, old Floot Command Center, legacy Cash CEO / Seller agents or historic "Buyer Intent Hunter" automations.
+
+## Verified infrastructure
+
+- Own fork: `flashbomb98-a11y/swarm`, development branch `opsly/new-swarm`.
+- Framework: `division-sh/swarm`, platform spec 0.7.0; upstream Apache 2.0.
+- Render workspace: `Opsly's workspace`.
+- Render primary candidate: `division-swarm-final-postgres`, source currently upstream `division-sh/swarm`, not this fork. Build succeeded in earlier run; newer startup failed with `startup ownership lease · Another swarm serve is already running`.
+- Render Postgres `division-swarm-pg16`: available, **free** plan, expiration shown 2026-11-08. External read-only SQL access from current connector is blocked by its networking allowlist. No claims about current table contents.
+- Neon `division-swarm-state`: separate external PostgreSQL; contains Division Swarm schema but no recorded agents / event runs during 2026-10-09 read check. Do not assume that it is the Render service's active database.
+- Railway `Division Swarm Basement` and `Agent Zero Basement`: staged resources only, never deployed. They are not the active Render production system.
+- A control probe logged `ready=true, db_ok=true` against an earlier version of the runtime. That is not proof the failed latest deploy or actual business agents work.
+
+## Operating rules
+
+1. No new paid services, upgrades or metered LLM API use without explicit approval.
+2. Do not restart, suspend, delete, reset or migrate production databases just to resolve uncertainty.
+3. Do not publish customer outreach automatically. Verify buyer intent and follow source rules.
+4. Avoid duplicate runtime ownership: rolling deployments may overlap and cause Postgres advisory lock conflict.
+5. Ensure tokens and passwords remain in secret environment settings only; never commit them.
+6. Verify deployments and live behavior through logs, readback and actual persisted events before saying "running".
+7. Start with deterministic intake and evidence traceability, expand into authentic source discovery, deduplication and human-reviewed outreach only after proof.
+8. All new code belongs on the fork and a development branch. Do not alter upstream or old Opsly products.
+
+## Rollout sequence
+
+1. Verify isolated intake contract with `swarm verify`.
+2. Add test harness for persisted intake and replay using an isolated SQLite store.
+3. Implement permitted discovery adapters and deterministic quality scoring with reference/evidence provenance.
+4. Add isolated AI reviewer and usage/cost ceilings, only with user-approved LLM budget.
+5. Prepare PostgreSQL backup, single-owner Render deployment strategy, health checks and credential review.
+6. Cut over after explicit cost/deployment review and prove end-to-end candidate intake, dedupe, triage and persisted results.
+
+**Completion status: initial source-controlled contract, not end-to-end live system.**
