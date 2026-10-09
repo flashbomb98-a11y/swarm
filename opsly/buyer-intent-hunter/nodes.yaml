@@ -1,0 +1,21 @@
+intent-intake:
+  execution_type: system_node
+  subscribes_to: [intent.candidate.received]
+  produces: [intent.review.queued]
+  event_handlers:
+    intent.candidate.received:
+      advances_to: queued
+      emit:
+        event: intent.review.queued
+        fields:
+          candidate_id: payload.candidate_id
+          source_url: payload.source_url
+          request_text: payload.request_text
+          discovered_at: payload.discovered_at
+          source_label: payload.source_label
+intent-audit:
+  execution_type: system_node
+  subscribes_to: [intent.review.queued]
+  event_handlers:
+    intent.review.queued:
+      advances_to: done

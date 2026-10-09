@@ -1,0 +1,8 @@
+name: opsly-buyer-intent-intake
+stages:
+  pending: {}
+  queued: {}
+  done: {final: true}
+pins:
+  inputs:
+    - intent.candidate.received

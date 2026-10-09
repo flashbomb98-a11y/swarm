@@ -1,0 +1,14 @@
+# Never commit customer/prospect evidence, downloaded feeds, database state or secrets
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.jsonl
+*.xml
+*.tmp
+*.log
+.env
+.env.*
+secrets*
+__pycache__/
+*.pyc
