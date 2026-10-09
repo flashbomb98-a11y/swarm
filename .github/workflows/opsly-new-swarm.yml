@@ -1,0 +1,28 @@
+name: OPSLY New Swarm — isolated intake checks
+
+on:
+  push:
+    branches: [opsly/new-swarm]
+    paths:
+      - 'opsly/buyer-intent-hunter/**'
+      - '.github/workflows/opsly-new-swarm.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  intake:
+    name: Offline intake + Division contract checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python unit tests (no network activity in application)
+        run: python3 -m unittest discover -s opsly/buyer-intent-hunter/tests -p 'test_*.py' -v
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: false
+      - name: Verify buyer intent Division contract
+        run: go run ./cmd/swarm verify opsly/buyer-intent-hunter --portable
