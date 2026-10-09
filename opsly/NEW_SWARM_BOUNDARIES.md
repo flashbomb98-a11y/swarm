@@ -34,3 +34,13 @@ As of 2026-10-09. Only the new Division Swarm project is in scope. **Do not reus
 6. Cut over after explicit cost/deployment review and prove end-to-end candidate intake, dedupe, triage and persisted results.
 
 **Completion status: initial source-controlled contract, not end-to-end live system.**
+
+## Verified progress on 2026-10-09
+
+- Division contract source: `opsly/buyer-intent-hunter` (YAML declarations only). `intent.candidate.received` -> `intent.review.queued` -> terminal intake state. This is a deterministic **intake**, not an implemented commercial reviewer.
+- Separate no-network / no-fee tools: `opsly/tools/buyer-intent`. Local RSS/Atom XML -> JSONL, local SQLite dedupe and deterministic scoring, opt-in secure JSON-RPC bridge with dry-run default, token in environment only.
+- Dedicated GitHub Actions workflow: `.github/workflows/opsly-new-swarm.yml`. **Verified successful run 37922549651**: `swarm verify --portable` passed, `swarm test` reported `scenario ok: tests/visible-smoke.yaml` and `scenarios=1`, and 21 Python tests passed. https://github.com/flashbomb98-a11y/swarm/actions/runs/37922549651
+- Code tested on dev branch `opsly/new-swarm` only; no deployment/merge has occurred.
+- Current safety: all buyer evidence remains unverified and outreach not sent. Test fixture is explicitly synthetic; no production buyer discovery or business sales verified.
+
+**Remaining blockers:** live allowed source registration/permissions, persistent feed scheduler and alerting, approved LLM costs (if using LLM-based scoring), Render change from upstream GitHub repo to own fork, single-owner PostgreSQL cutover and independent live event readback, Render free database expiry/backup. None of those is proven operational by CI.
