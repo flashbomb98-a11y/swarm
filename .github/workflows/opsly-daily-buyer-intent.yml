@@ -1,0 +1,53 @@
+name: Opsly – daily public buyer-intent digest
+
+on:
+  schedule:
+    - cron: '25 7 * * *'
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths:
+      - '.github/workflows/opsly-daily-buyer-intent.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: opsly-buyer-intent-daily
+  cancel-in-progress: false
+
+jobs:
+  daily-intake:
+    if: github.repository == 'flashbomb98-a11y/swarm'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore prior deduplication state
+        uses: actions/cache/restore@v4
+        with:
+          path: .opsly-runtime/buyer-intent.sqlite
+          key: opsly-buyer-state-${{ github.run_id }}
+          restore-keys: |
+            opsly-buyer-state-
+      - name: Read approved public RSS once; produce sanitized review report
+        run: |
+          python3 -B opsly/tools/buyer-intent/daily_intake.py \
+            --sources opsly/tools/buyer-intent/sources.public.json \
+            --db .opsly-runtime/buyer-intent.sqlite \
+            --report opsly-review-report.json \
+            --execute
+      - name: Upload URL-only unverified review report (7 days)
+        uses: actions/upload-artifact@v4
+        with:
+          name: opsly-unverified-buyer-intent-links
+          path: opsly-review-report.json
+          retention-days: 7
+          if-no-files-found: error
+      - name: Save deduplication state for next daily run
+        uses: actions/cache/save@v4
+        with:
+          path: .opsly-runtime/buyer-intent.sqlite
+          key: opsly-buyer-state-${{ github.run_id }}
