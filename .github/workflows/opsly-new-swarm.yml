@@ -16,13 +16,15 @@ jobs:
     name: Offline intake + Division contract checks
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: "1"
     steps:
       - uses: actions/checkout@v4
-      - name: Python unit tests (no network activity in application)
-        run: python3 -m unittest discover -s opsly/buyer-intent-hunter/tests -p 'test_*.py' -v
       - uses: actions/setup-go@v5
         with:
           go-version-file: go.mod
           cache: false
       - name: Verify buyer intent Division contract
         run: go run ./cmd/swarm verify opsly/buyer-intent-hunter --portable
+      - name: Python unit tests (application has no network calls)
+        run: python3 -B -m unittest discover -s opsly/buyer-intent-hunter/tests -p 'test_*.py' -v
