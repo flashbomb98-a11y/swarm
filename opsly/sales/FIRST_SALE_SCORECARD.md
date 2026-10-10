@@ -54,3 +54,27 @@ Ein täglich morgens laufender **bedingter Check** auf neue echte Upwork- und Re
 - Kein Auftragsbeginn vor nachweisbarem Vertrag bzw. sicherer Plattformzahlung.
 - Kein eigenmächtiger Wechsel der Architektur: **Division Swarm** bleibt das bestehende technische System mit Postgres-durablem Zustand, soweit Orchestrierung beteiligt ist.
 - Keine automatische Monetarisierung behaupten: Kundensuche und Angebot sind Vorstufen, nicht Umsatz.
+
+
+## Aktueller Checkpoint — 10.10.2026, nächster Akquise-Durchlauf
+
+Dieser Abschnitt **aktualisiert** die ältere Momentaufnahme der Kontaktzustellung weiter oben.
+
+| Kennzahl | Verifiziert |
+|---|---|
+| Upwork Catalog | **1 Approved, Visible** |
+| Upwork Views / Bestellungen | **1** View in den letzten 30 Tagen; **0** Bestellungen |
+| Upwork-Kundengespräche | **0** (Nachrichtenfach zeigte keine Konversationen) |
+| Reddit-Nachrichten/Antworten | Keine neue Benachrichtigung; im Chat mit u/Visual_Lake5512 **keine Antwort** |
+| **Korrekt adressierte, im Empfängerchat sichtbare Kontaktversuche** | **2**: u/Visual_Lake5512 und u/AdministrativeDot526 |
+| Echte qualifizierte Antworten / bestätigte Aufträge / Einnahmen | **0 / 0 / 0** |
+| Zusätzliche Kosten | **0** |
+
+**Korrektur eines früheren Fehlers:** Die alte Reddit-Nachricht `Your business website request in r/webdesign` war über die inzwischen archivierte Nachrichtenfunktion in einem Chat **mit dem Reddit-Systemkonto `u/reddit`**, **nicht** in einem Direktchat mit u/AdministrativeDot526 gelandet. Das wurde über `rs-room-info` (Kontoname `reddit`) bestätigt. Anschließend wurde **einmalig** der korrekte direkte Chat `Direct chat with AdministrativeDot526` aufgebaut und die individuelle Anfrage gesendet. Reddit zeigt die tatsächlich gesendete Nachricht im Gesprächsverlauf an:
+https://www.reddit.com/chat/room/!OrcPNhAkwTHRg4_7UNVD0NXj3OJn2311J8SoBKSfEz0%3Areddit.com .
+
+**Kundenversandtest:** Die RAUMGRÜN-Musterdatei wurde mit lokalem Chromium auf 1440/768/390/320 px getestet; Fehlerfreiheit der JS-Laufzeit, Navigationslinks, mobiles Menü und lokale Formularvorschau überprüft. Die **Demo ist keine reale Kundenwebseite und sendet keine Formulardaten**. QA-Nachweis und Übergabeschranken: [STATIC_WEBSITE_QA_2026-10-10.md](STATIC_WEBSITE_QA_2026-10-10.md).
+
+**Neues Screening:** Eine aktuelle Reddit-Anzeige für eine Firmenwebseite inklusive dauerhafter Wartung bei 15.000 INR wurde **nicht** kontaktiert; dauerhaftes Maintenance-Scope und Preis passen nicht zum USD-399-Onepager. Ebenso zahlreiche `[For Hire]`-Anzeigen als Konkurrenten statt Kunden aussortiert.
+
+**Nächster sinnvoller Schritt:** Antworten in den beiden korrekt adressierten Reddit-Chats und echte Upwork-Bestellungen prüfen. Bei Käufern vor jedem Preisversprechen Hosting, CMS und Kundenmaterialien klären. Keine zweite identische DM versenden.
