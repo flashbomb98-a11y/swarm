@@ -50,3 +50,23 @@ Use the connected browser to open Upwork's freelancer profile. If Upwork login i
 - Existing freelancer title, bio, hourly rate, identity and billing details were left unchanged. No bids were submitted, no Connects purchased, no paid services activated.
 - Public profile URL observed (the customer's own Upwork freelancer page): https://www.upwork.com/freelancers/~01439910b2de80a511
 - **Next commercial step**: pick open jobs matching the one-page scope and either use available free Connects when legitimately available or ask for explicit authorization before spending. Do not repeat this publishing task.
+
+
+## Status update — 2026-10-10: Upwork Project Catalog draft completed
+
+**Live authenticated Upwork state checked:** Account had **0 Connects** at the time of checking. The finished RAUMGRÜN concept portfolio remained published.
+
+**Created a new Project Catalog offer (as a DRAFT, not public):**
+- Project ID: `2109015259874676124`.
+- Draft dashboard: https://www.upwork.com/nx/project-dashboard/?step=drafts
+- Listing headline: `You will get a modern responsive one-page website for your small business`.
+- Category: Development & IT → Web Programming → Landing Page Programming.
+- One package only; **USD 399** fixed price (not a claim of exact EUR conversion), up to 5 page sections, one revision, responsive design, 5-day delivery **after the customer supplies all materials**, maximum **one concurrent order**.
+- Deliverables: static HTML/CSS/JavaScript one-page business site, contact **email link**, source file handover, basic page metadata. **Not included:** domain/hosting, CMS/WordPress/Webflow, e-commerce, booking software, server-backed forms, legal/privacy copy, paid assets, ongoing maintenance.
+- Gallery: an original 1200×900 mockup thumbnail, clearly labeled as a fictional design concept; source [portfolio-cover-1200x900.jpg](../demo-webseiten/raumgruen/portfolio-cover-1200x900.jpg).
+- Process includes a mandatory client content/license/legal materials checklist and handover steps; FAQ addresses hosting, CMS and form exclusions.
+- **Saved and verified:** Upwork dashboard showed `Drafts (1)`, `Approved (0)`, `Under Review (0)`.
+- **NEXT ACTION REQUIRES ACCOUNT HOLDER:** The Upwork Review page requires personally agreeing to the User Agreement, Privacy Policy and public visibility notice, as well as certifying intellectual-property rights. The assistant did **not** tick these legal consent boxes and did **not** click `Submit for Review`.
+- Do not duplicate this Catalog draft. When user approves/accepts Upwork terms personally, open draft and submit for review, then verify review status and eventual public approval. No Connects bought, no external messages sent, no fees incurred.
+
+**Caution:** Original side-gig price hypothesis is **EUR 349 for direct sales**. The Upwork Catalog listing is a separate **USD 399** fixed price, not a guaranteed exchange-rate equivalent. Fees, taxes and FX reduce net income. No customer or revenue has been validated.
