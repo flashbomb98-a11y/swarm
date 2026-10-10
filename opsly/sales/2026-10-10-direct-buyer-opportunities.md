@@ -63,3 +63,12 @@ Purpose: select **real public buyer requests** for our approved one-page website
 
 ### Next stage
 - Wait for an inbound response from u/Visual_Lake5512 and earlier u/AdministrativeDot526. Respond only if there is a genuine reply, qualify scope and payment via Upwork where appropriate. Existing zero-Connects constraint remains. No mass cold outreach, no purchases and no Division Swarm/Render/DB changes.
+
+
+## Zustellkorrektur und Scope-Screening — 10.10.2026
+
+- **u/AdministrativeDot526:** Der erste Nachrichtenversuch über Reddits alte `/message/compose/`-Maske gelangte als Chat mit **Reddit-Systemkonto `reddit`** in einen separaten Raum; dort zeigte `rs-room-info` klar das Konto `reddit`. Dieser Versuch war **kein** belegter Kontakt zum tatsächlichen Käufer. Eine einmalige korrekte Nachricht wurde deshalb nun an die von der öffentlichen Profilfunktion `Start Chat` ausgewiesene Reddit-ID `t2_f5zyuza9` geschickt. Bestätigt durch neuen Raum **`Direct chat with AdministrativeDot526`** und ein ausgehendes Timeline-Event: https://www.reddit.com/chat/room/!OrcPNhAkwTHRg4_7UNVD0NXj3OJn2311J8SoBKSfEz0%3Areddit.com . Kein Käufer-Reply.
+- **u/Visual_Lake5512:** Der andere direkte Chat enthält weiter unsere einmalige Anfrage, noch ohne Antwort.
+- **Weitere aktuelle Reddit-Anzeige:** "Need someone to make me a website for my business and maintain it; pay is 15k INR" im Bereich r/sidehustleIndia, etwa 10.10.2026. **Nicht kontaktiert**, weil Wartung ausdrücklich gefordert und das Budget zum definierten 399-USD-Standardpaket nicht plausibel passt.
+- **Marktscreening:** Viele Suchtreffer wie `[For Hire]` oder "I’m Looking For Web Designers" waren eigene Angebote von konkurrierenden Freelancer:innen oder Werbetexte, keine Kaufabsicht; nicht als Leads gezählt.
+- **Nächste Kontakte:** Nicht dieselben Personen erneut anschreiben, nur auf echte Antworten reagieren. Zwei korrekt versandte Direktnachrichten sind **keine** zahlenden Kunden.
