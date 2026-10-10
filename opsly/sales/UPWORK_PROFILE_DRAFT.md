@@ -70,3 +70,17 @@ Use the connected browser to open Upwork's freelancer profile. If Upwork login i
 - Do not duplicate this Catalog draft. When user approves/accepts Upwork terms personally, open draft and submit for review, then verify review status and eventual public approval. No Connects bought, no external messages sent, no fees incurred.
 
 **Caution:** Original side-gig price hypothesis is **EUR 349 for direct sales**. The Upwork Catalog listing is a separate **USD 399** fixed price, not a guaranteed exchange-rate equivalent. Fees, taxes and FX reduce net income. No customer or revenue has been validated.
+
+
+## Live Update — 2026-10-10: Project Catalog approved and visible
+
+**Verified directly in logged-in Upwork account**, project `2109015259874676124`:
+- User submitted the initial draft themselves. It initially appeared as `Under Review (1)` but had a **Needs changes** note: `Title and/or description are not in English`.
+- Existing listing edited in place; **no duplicate**. Title simplified to `You will get a mobile-friendly one-page website for your small business` (prefix auto-provided by Upwork). English-language description rewritten in plain language. The German-language gallery image was replaced with an **English-only original**: [portfolio-cover-english-1200x900.jpg](../demo-webseiten/raumgruen/portfolio-cover-english-1200x900.jpg). The old German image was removed from the Upwork Catalog gallery.
+- User's previously accepted Terms-of-Service and public-visibility consent checkboxes **remained checked**; assistant did not tick them. Edited project was resubmitted using `Submit for Review` → `Send to Review`.
+- Upwork reported **“Congrats! You've successfully submitted your project! We'll let you know when your project has been approved.”**
+- Final verified dashboard: **`Approved (1)`, `Under Review (0)`, `Drafts (0)`; listing explicitly `Visible`**, with **0 views (last 30 days)** and **0 orders** at time of check. This is a genuine approved offer, **not a paid customer or revenue**.
+- Project dashboard: https://www.upwork.com/nx/project-dashboard/?step=approved. Listing ID `2109015259874676124`. Do not invent a public sharable URL; Upwork's `Share → Link` button copied to the in-browser clipboard but no verified value was obtained.
+- Fixed offer: **USD 399**, one responsive static one-page website with five sections, one revision, five days after receipt of complete client materials, capacity one open project.
+- No Connects purchased, no paid subscription, no applications sent, no backend/Render/Division Swarm configuration changes.
+- **Next:** cultivate *opt-in/relevant* warm leads and targeted responses to real public buyer requests. Avoid bulk unsolicited spam. Follow Upwork's communication and payment rules for leads originating on Upwork. Track metrics honestly (view, message, order, income = 0 initially).
