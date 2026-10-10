@@ -1,6 +1,6 @@
-# Opsly — Upwork profile draft (not submitted)
+# Opsly — Upwork sales presence: archived initial draft + confirmed live state
 
-Status: Prepared 2026-10-10; **not posted**. Only the account holder can provide legal name, genuine portrait, identity, payment and tax information. Do not invent prior customers, years of experience, certifications, locations or software expertise. Do not purchase Connects, submit bids or enroll in paid subscriptions without approval.
+**Current verified status (2026-10-10): Portfolio concept published; Upwork Project Catalog offer approved and Visible, USD 399; Upwork profile headline, overview and skills updated. Orders: 0; confirmed revenue: 0.** The original copy directly below is an **archived proposed draft**, not the exact live title or live listing text. For exact live state use the dated updates at the end of this file and [FIRST_SALE_SCORECARD.md](FIRST_SALE_SCORECARD.md). Only the account holder can provide legal name, genuine portrait, identity, payment and tax information. Do not invent prior customers, years of experience, certifications, locations or software expertise. Do not purchase Connects, submit bids or enroll in paid subscriptions without approval.
 
 ## Headline
 Responsive One-Page Websites | Small Business Landing Pages
