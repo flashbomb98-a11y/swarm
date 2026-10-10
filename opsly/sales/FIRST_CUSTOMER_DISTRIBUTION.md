@@ -1,6 +1,6 @@
 # Opsly — First customer distribution sequence
 
-Last checked: 2026-10-10. **Live Upwork Project Catalog approved, Visible; 0 views in prior 30 days, 0 orders at time of check.** These counts are not forecasts and may change.
+Last checked: 2026-10-10 late evening. **Live Upwork Project Catalog Approved (1), Visible; 1 view in prior 30 days, 0 orders; Upwork Messages empty.** The view may be our own test and is not evidence of buyer interest. These counts are not forecasts and may change.
 
 ## Verified destination
 
@@ -17,7 +17,7 @@ Focus on **specific buyers who ask for a simple, responsive, single-page busines
 
 Potential zero-spend promotion venue: r/smallbusiness official **Q4 2026 Promote your business thread** (October 3), which explicitly permits individual self-promotion but prohibits repeated spam:
 https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/promote_your_business_thread_for_q4_2026/
-**Not posted**. No Reddit login/approval was available to publish on behalf of user.
+**POSTED on 2026-10-10**, exactly once, from the authenticated Opsly Web Studio Reddit profile. Direct permalink: https://www.reddit.com/r/smallbusiness/comments/1wwpjlw/comment/pf4e9ka/ . Do not repost or treat the posting as a sale.
 
 ### Ready-to-paste English self-promotion for an explicitly allowed promotion thread
 
@@ -31,9 +31,9 @@ Do not insert placeholder details or send until a **genuine matching public requ
 
 ## Honest funnel state / next measurement
 
-Status now: profile aligned ✅; fictional portfolio published ✅; $399 catalog approved and visible ✅; manual buyer outreach **not sent**; inquiries **0 verified**; orders **0**; income **0**.
+Status now (2026-10-10): profile aligned ✅; fictional portfolio published ✅; $399 catalog approved and visible ✅; one Reddit promotional comment posted ✅; two individual contact attempts, of which the u/Visual_Lake5512 direct chat is verified as sent ✅; **genuine buyer replies 0 verified; Upwork orders 0; income 0**.
 
-Recommended one daily checkpoint once explicitly requested: inspect approved catalog's **views, messages, orders and reviews**; identify one realistic lead request, and notify user only of concrete activity. Do not misstate browsing as buyer interest or assume background monitoring is active.
+Daily morning condition-based buyer-signal checking was explicitly activated on **2026-10-10**. Report only verified significant changes; if authentication expires, do not claim successful checks. Do not misstate browsing or unsolicited messages as buyer interest.
 
 
 ## Update — 2026-10-10 late evening: Reddit public promotion and targeted contact
