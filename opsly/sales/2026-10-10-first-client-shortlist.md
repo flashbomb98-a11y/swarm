@@ -78,3 +78,34 @@
 
 ## Harte Realität
 Dies sind **belegte veröffentlichte Projektgesuche**, keine nachgewiesenen offenen Verkaufsgespräche. Kein Auftrag wurde vergeben, keine Nachricht versendet, kein Umsatz verbucht. Eine profitable Wiederholbarkeit ist noch nicht erwiesen. Die Angebotsklasse bleibt dennoch klein, ohne weitere Render-Dienste oder eine neue Agentenarchitektur.
+
+
+---
+
+## Nachtrag 10.10.2026 (abends) — zusätzliche Kandidatenprüfung
+
+### PRIORITÄT B: Landing Page for New Product, $400
+- Original: https://www.upwork.com/freelance-jobs/apply/Landing-Page-for-New-Product_~022107950155673434650/
+- Öffentlich erneut abgerufen am **10.10.2026**. Eine Landingpage für einen Produktlaunch (US$400, weltweit) mit erklärendem Text, Funktionen, Vorteilen und CTA zu Anfrage/Kauf. **50+ Bewerbungen**, bisher 0 Interviews auf der öffentlichen Ansicht. Konkurrenz hoch; es ist keine zugesagte Beauftragung.
+- **Passt nur**, wenn ein einzelner statischer Webauftritt genügt, der Kunde alle Produktbilder und die Grundlage der Inhalte liefert und der CTA zu einer vorhandenen Checkout-/Kontaktseite führt. Kaufabwicklung, Warenkorb, CMS, Echtzeit-Integrationen oder messbare Conversion-Garantien sind nicht Bestandteil unserer 349-EUR-Basisleistung.
+- Vorschlag für eine individuelle Plattformbewerbung (**nicht versendet**):
+
+> Hello! For a new product launch, I would keep the landing page focused: a clear headline, the product's key benefits, three supporting feature sections, and one strong path to the existing checkout or enquiry destination. I have a finished responsive one-page **fictional concept demo** to show the kind of layout and mobile experience I can build; it is not a previous client project. To confirm a fair fixed price, could you share whether all text/images are ready, whether you require a CMS, and whether payment or form handling already exists elsewhere? I can then propose a precise scope and delivery schedule.
+
+### AUSGESCHLOSSEN (veröffentlicht, aber nicht unser Paket)
+- https://www.upwork.com/freelance-jobs/apply/Canva-Website-Design-Enhancement_~022107864872245516137/ : $400, aber Erfahrung mit *Canva-Webseitenbearbeitung* gefordert. Kann nicht mit unserer HTML-Demo zugesagt werden.
+- https://www.upwork.com/freelance-jobs/apply/WordPress-Developer-Needed-for-Ongoing-Small-Business-Website-Projects_~022106299728994450427/ : $400, verlangt eine **fünfseitige WordPress-Seite, Elementor, Formulare, Analytics, zwei Korrekturrunden und drei echte WP-Referenzen**. Deutlich außerhalb unseres Pakets; keine falschen Nachweise angeben.
+- https://www.upwork.com/freelance-jobs/apply/Web-Dev-for-Gamified-EdTech-Landing-Page-Demo-Dheemant_~022107799448932180626/ : $400, zusätzlich interaktives Spiel, CRM-Integration und CMS; stark unterbudgetiert für den geforderten Umfang.
+- Viele öffentliche Landingpage-Aufträge zu $5–$50: kein tragfähiger Ersatz für ein 349-EUR-Angebot. Nicht durch Preisunterbietung fehlende Nachfrage kaschieren.
+
+### Account- und Kostensperren
+- Bei der letzten **angemeldeten** Upwork-Ansicht am 10.10.2026 waren **0 Connects** sichtbar; die Profiloberfläche zeigte **Unverified**. Aus „Unverified“ allein folgt nicht sicher, dass das Konto gerade zur Identitätsprüfung verpflichtet wurde.
+- Upwork sagt, dass Bewerbungen Connects benötigen und dass die benötigte Anzahl je Auftrag schwankt. Keine Connects kaufen, keine bezahlten Identitätsabzeichen, keine Profil-Boosts und keine Freelancer-Plus-Mitgliedschaft ohne eigene ausdrückliche Zustimmung des Nutzers.
+- Quellen: https://support.upwork.com/hc/en-us/articles/211062898-Understanding-and-using-Connects ; https://support.upwork.com/hc/en-us/articles/211062998-How-to-submit-a-proposal-on-Upwork ; https://support.upwork.com/hc/en-us/articles/360001176427-How-to-verify-your-identity-as-a-freelancer
+- Der Portfolio-Entwurf „Responsive One-Page Website for a Landscaping Business | Concept“ wurde **gespeichert**, aber Stand dieses Nachtrags **nicht veröffentlicht**. Er ist durchgehend als fiktives Beispiel zu kennzeichnen.
+
+### Nach Rückkehr an den Laptop
+1. In den aktiven, vom Nutzer freigegebenen Browser einloggen. Upwork → My Profile → Portfolio → Drafts.
+2. Bestehenden Entwurf um die vorbereiteten **echten Screenshots** des fiktiven RAUMGRÜN-Demos ergänzen: Startbild, Leistungen, lange Desktop-/Handyansicht. **Kein neuer doppelter Entwurf.**
+3. Auf „Next: Preview“ gehen, die klare Kennzeichnung *fictional concept / not a client commission* prüfen, dann ausschließlich mit erteilter Freigabe veröffentlichen.
+4. Öffentliches Portfolio auf Published nachprüfen. Bestehenden Graphic-Design-Titel nicht ungefragt überschreiben. Danach einzelne passende Ausschreibungen erneut prüfen, ohne Connects zu kaufen.
