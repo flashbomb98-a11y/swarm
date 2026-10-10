@@ -84,3 +84,12 @@ Use the connected browser to open Upwork's freelancer profile. If Upwork login i
 - Fixed offer: **USD 399**, one responsive static one-page website with five sections, one revision, five days after receipt of complete client materials, capacity one open project.
 - No Connects purchased, no paid subscription, no applications sent, no backend/Render/Division Swarm configuration changes.
 - **Next:** cultivate *opt-in/relevant* warm leads and targeted responses to real public buyer requests. Avoid bulk unsolicited spam. Follow Upwork's communication and payment rules for leads originating on Upwork. Track metrics honestly (view, message, order, income = 0 initially).
+
+
+## Update — 2026-10-10: Live public link and profile conversion complete
+- Exact **public approved catalog URL** verified from Upwork profile's own `View project` button: https://www.upwork.com/services/product/development-it-a-modern-responsive-one-page-website-for-your-small-business-2109015259874676124 . This supersedes the earlier note that the sharable URL was not yet verified.
+- Freelancer public profile title changed and verified: **Graphic Designer | Branding, Logos & One-Page Websites** (preserving graphics focus).
+- Existing original profile overview retained in full and expanded with honest one-page HTML/CSS/JavaScript website service, scope exclusions and explicit fictional demonstration disclaimer.
+- `Web Design` and `Landing Page` skills added and verified in public profile. Other original skills and hourly rate unchanged.
+- Public catalog listed on freelancer profile, **from USD 399**, 5-day delivery; zero Connects at check.
+- First-client promotion preparation and compliant non-bulk outreach templates documented in [FIRST_CUSTOMER_DISTRIBUTION.md](FIRST_CUSTOMER_DISTRIBUTION.md). These outreach messages **have not been sent**.
