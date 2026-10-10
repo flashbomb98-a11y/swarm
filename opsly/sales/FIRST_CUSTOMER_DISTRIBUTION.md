@@ -54,3 +54,17 @@ Daily morning condition-based buyer-signal checking was explicitly activated on 
 - Broader Reddit searches found abundant `[For Hire]` freelancer advertising. Specifically `https://www.reddit.com/r/smallbusiness/comments/1wzefi3/im_looking_for_web_designers/` is a marketing-tool promotion, **not a buyer**. No more bulk outreach and do not post on r/DesignJobs with the new account: subreddit auto-moderator requires **10-day age and 50 karma** for public hiring-thread comments.
 - A potentially helpful live-preview link via `raw.githack.com` showed an external-content security interstitial in browser, so it is **not** a verified frictionless live demo and was **not sent to buyers**. No GitHub Pages or new hosting provisioned, preserving no-new-infrastructure instruction. Current honest reference remains the approved Upwork listing's fictional concept images.
 - **Current next actions:** await relevant replies, screen new *explicit actual buyer requests* conservatively, and require up-front scope verification before any paid commitment. No real customer or revenue so far.
+
+
+## Korrigierte Reddit-Zustellung und nächste Sequenz — 2026-10-10
+
+**Fehlerprüfung statt Doppelzählung:** Die zuvor als unbestätigt dokumentierte Nachricht an u/AdministrativeDot526 erschien tatsächlich in einem Chatraum **mit dem Kontonamen `reddit` (Reddit-Systemkonto)**. Der sichtbare Betreff `Your business website request in r/webdesign` hatte den Empfänger irreführend dargestellt. Sie ist **nicht** als Nachricht an den Käufer zu zählen.
+
+**Korrekt versandt:** Der Reddit-Browser wurde auf den öffentlichen Nutzer `u/AdministrativeDot526` und die Profilfunktion `Start Chat` (Ziel `t2_f5zyuza9`) geführt. Nach dem direkten Einladungstext über den echten Chat-Composer bestätigte Reddit den Raum **`Direct chat with AdministrativeDot526`** und zeigte die Nachricht von `u/Agreeable_Try_2385` als Timeline-Event. Einmalige, individuell angepasste Nachricht, kein Follow-up-Spam:
+https://www.reddit.com/chat/room/!OrcPNhAkwTHRg4_7UNVD0NXj3OJn2311J8SoBKSfEz0%3Areddit.com
+
+Der Text fragt, ob der 1.000-$-Wunsch vom ursprünglichen Post noch offen ist und ob eine statische Ein-Seiten-Website genügt; enthält den ehrlichen Preis **399 USD**, die Begrenzungen und den ausdrücklichen Hinweis auf das fiktive Portfolio-Konzept. **Keine Antwort/Annahme oder Zahlung bestätigt.** Der frühere Kontakt zu `u/Visual_Lake5512` bleibt ebenfalls korrekt im Chat nachgewiesen, bisher ohne Antwort.
+
+**Vertriebszahlen:** 2 korrekt adressierte Reddit-Direktkontakte, 1 selbst genehmigter Werbethread-Beitrag, 1 freigegebenes Upwork-Catalog-Angebot mit 1 Aufruf im letzten 30-Tage-Fenster, 0 Bestellungen, 0 echte Kundenantworten, 0 Einnahmen, 0 zusätzliche Gebühren.
+
+**QA:** Lokale Chromium-Smoke-Tests des fiktiven RAUMGRÜN-Musters ohne neuen Hostingdienst absolviert. Dokumentiert unter [STATIC_WEBSITE_QA_2026-10-10.md](STATIC_WEBSITE_QA_2026-10-10.md). Kein Live-Kundendeployment und kein echtes Backendformular.
