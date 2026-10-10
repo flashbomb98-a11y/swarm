@@ -39,3 +39,14 @@ The account holder must review and approve personal details and all skill claims
 
 ## Next action
 Use the connected browser to open Upwork's freelancer profile. If Upwork login is missing or a challenge appears, the user signs in **on the actual Upwork site**, without ever putting credentials in chat. Then continue data entry and preview; do not submit proposals or pay for Connects automatically.
+
+
+## Status update — 2026-10-10, Upwork browser verified
+- The pre-existing Upwork freelancer account was accessed after the account holder logged in in the authorized browser.
+- Portfolio project **“Responsive One-Page Website for a Landscaping Business | Concept”** published using the existing draft, not a duplicate. Upwork explicitly reported: **“Your portfolio project is published! Anyone viewing your profile will be able to see it now.”**
+- Independently checked under **Portfolio → Published**; the project title appears there and **Portfolio → Drafts** showed no remaining drafts.
+- A new green concept thumbnail was produced from an original design and visibly labeled **“FICTIONAL PORTFOLIO PROJECT · NOT CLIENT WORK”**. GitHub source: [portfolio-cover-concept.jpg](../demo-webseiten/raumgruen/portfolio-cover-concept.jpg).
+- All copy consistently identifies the project as a fictional demonstration. No completed customer job, reviews, payments or production client work was claimed.
+- Existing freelancer title, bio, hourly rate, identity and billing details were left unchanged. No bids were submitted, no Connects purchased, no paid services activated.
+- Public profile URL observed (the customer's own Upwork freelancer page): https://www.upwork.com/freelancers/~01439910b2de80a511
+- **Next commercial step**: pick open jobs matching the one-page scope and either use available free Connects when legitimately available or ask for explicit authorization before spending. Do not repeat this publishing task.
