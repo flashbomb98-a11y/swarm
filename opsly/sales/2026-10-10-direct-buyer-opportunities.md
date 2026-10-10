@@ -37,3 +37,29 @@ Purpose: select **real public buyer requests** for our approved one-page website
 ## Next doable action
 - If user has a Reddit account and chooses to use Reddit, user completes the anti-bot check/sign-in in an authorized interactive browser session; then assistant can place **one** relevant ad in the subreddit’s explicitly permitted promo thread and optionally write **one** targeted response to buyer A. The user should approve the actual posts before publication.
 - Independently monitor Upwork messages and catalog views, but never imply recurring monitoring without a separately created automation. Prioritize real inbound demand over proxy vanity metrics.
+
+
+## Further execution, evening 10.10.2026 — verified buyer outreach #2
+
+### Confirmed account and funnel
+- Upwork Project Catalog at `https://www.upwork.com/nx/project-dashboard/?step=approved` displayed **Approved (1)** and **Visible**; in its past-30-day views column **1** (previously 0), orders **0**. A view is not necessarily buyer interest (could be self-view).
+- Upwork Messages `https://www.upwork.com/ab/messages/rooms/` displayed **“Conversations will appear here”** and no client conversations; currently no Upwork orders or confirmed prospects.
+- Reddit promo comment posted earlier remains on the Opsly Reddit profile under **Comments**. Public visibility via an independent logged-out browser is not yet established, because that browser receives the Reddit `Prove your humanity` challenge.
+
+### Buyer B — u/Visual_Lake5512, fixed-price business website
+- Original: https://www.reddit.com/r/DesignJobs/comments/1x11ua4/hiring_looking_for_web_designer/
+- Verified Reddit request posted approx **8 October 2026**: the poster has a sketch and wants someone to code a *simple business webpage*, no shop, with assistance **until online**, says EUR 20/hour but **prefers fixed price**. Many existing responses (~85), so no claimed open availability or selection.
+- Important **scope mismatch**: our approved USD 399 package delivers static files but **excludes hosting/deployment**. Do not offer the whole requested solution as covered by USD 399; hosting launch assistance must be specified, estimated and priced separately, based on the existing provider and actual requirements.
+- Subreddit r/DesignJobs imposes at least **10 days account age and 50 karma** for public comments on hiring posts. Our new Reddit account does not meet these thresholds. Do **not** bypass this restriction or post there publicly.
+- On 10 October sent exactly **one** tailored direct Reddit Chat invitation from `u/Agreeable_Try_2385` to the genuine profile `u/Visual_Lake5512`. Reddit navigated to a chat room with the title **“Direct chat with Visual_Lake5512”**. The message is visible in an `rs-timeline-event`, authored by `Agreeable_Try_2385`. This confirms sending to the targeted account, not a placeholder or Reddit admin room.
+- Actual text: “Hi, I saw your r/DesignJobs post seeking someone to build a simple business webpage from your sketch. I offer responsive one-page HTML/CSS/JS websites at a $399 fixed price (up to five sections, one revision, source files). Hosting and putting the site online are not included in that base package, so I would need to scope any launch help separately. Could you share the sketch and tell me whether you already have hosting? I can then confirm whether we're a fit. My profile links to a clearly marked fictional concept example, not past client work. No problem if you've already hired someone.”
+- Direct chat URL observed: `https://www.reddit.com/chat/room/!5rNuKFjF4AsQzEylCN2IFpBJpmNUIrb3-uRTIkfB_-c%3Areddit.com` (requires logged-in Reddit). **No acceptance, reply, quote, order or payment verified.** Do not send a repeated DM or claim successful sales.
+
+### Disqualified posts, despite search matches
+- https://www.reddit.com/r/smallbusiness/comments/1wzefi3/im_looking_for_web_designers/ — **not a buyer**; seller-promoted bulk cold email/lead tool.
+- https://www.reddit.com/r/smallbusiness/comments/1wy8a7d/website_for_500/ — **competitor advertising their website service**, not a customer.
+- r/webdesign restaurant ordering apps is complex software, outside our static one-page package.
+- Other Reddit r/forhire and r/WebDeveloperJobs recent `[For Hire]` results are largely competing providers, not buyers; do not inflate the lead count.
+
+### Next stage
+- Wait for an inbound response from u/Visual_Lake5512 and earlier u/AdministrativeDot526. Respond only if there is a genuine reply, qualify scope and payment via Upwork where appropriate. Existing zero-Connects constraint remains. No mass cold outreach, no purchases and no Division Swarm/Render/DB changes.
