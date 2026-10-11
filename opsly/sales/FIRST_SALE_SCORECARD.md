@@ -107,3 +107,22 @@ Einmalig angelegter, veröffentlichter und tatsächlich abgeschlossener read-onl
 - Die Leseprüfung ist **keine** Bestellung, kein Kunde, keine Einnahme und kein Beweis, dass jede künftige Anmeldung oder CAPTCHA dauerhaft ausfällt.
 - Skyvern MCP `skyvern_browser_session_create` besitzt in dieser Konfiguration **kein** `browser_profile_id`-Feld; Profilwiederverwendung erfolgt über den verifizierten **Workflow** mit `browser_profile_id` und nicht über einen normalen leeren Browserstart.
 - Das tägliche Opsly-Condition-Watch-Monitoring `Opsly Kundenchancen prüfen` wurde aktualisiert, damit es diesen Workflow bei verfügbarem kostenlosen Skyvern-Kontingent bevorzugt und bei Login-Blockern den fehlenden Zugriff offenlegt; es führt keine Käufe durch und sendet ohne Bedarf keine Meldung.
+
+## 11.10.2026 — Neue Verkaufssequenz mit gespeicherten Logins
+
+**Tatsächlich durchgeführte Aktionen:**
+
+- **Skyvern-Lese-Workflow neu erstellt und erfolgreich ausgeführt:** `wpid_584271904153396962` („Opsly Aufträge und Antworten lesen“), Run `wr_584271951398037242`, mit dem gespeicherten Browserprofil `bp_584266402178234806` („Opsly Login“). Lesend, kein Checkout, kein Nachrichtensenden.
+- Upwork-Katalog: **Approved and Visible, 3 Views im letzten 30-Tage-Fenster, 0 Orders**. Vorheriger belegter Stand war 1 View. Views sind keine bestätigten Käufer, können auch eigene Seitenaufrufe enthalten.
+- Upwork-Nachrichten: Login erfolgreich und Nachrichtenansicht geöffnet; **keine neue Käufernachricht sichtbar**, allerdings wurde weder eine Konversationszahl noch ein „0 Gespräche“-Hinweis angezeigt. **Keine Nullzahl als verbindlich ausgegeben.**
+- Reddit-Chat `u/AdministrativeDot526`: eingeloggt, Workflow zeigte **keine neue Käuferantwort**; nur unsere ausgehende Nachricht.
+- Reddit-Chat `u/Visual_Lake5512`: **UNGEKLÄRT**. Der extrahierende Agent interpretierte im geöffneten Raum `Agreeable_Try_2385` als Chat-Empfänger statt `Visual_Lake5512`, also **kein belastbarer Antwortstatus**; getrennt prüfen. Keine Doppel-DM.
+- Zweiter Skyvern-Workflow `wpid_584272608528033644` zur **einmaligen** Vorstellung des 399-USD-Pakets im offiziellen r/startups-Wochenthread gestartet. Run `wr_584272651038919280`: **terminated vor dem Posten**, weil eine Google-reCAPTCHA-Abfrage sichtbar war und Kontoinhaber nicht zweifelsfrei bestätigt werden konnte. **Kein Reddit-Kommentar veröffentlicht**, kein CAPTCHA umgangen oder wiederholt. Offizieller Thread: https://www.reddit.com/r/startups/comments/1wxyyl0/hiringseekingoffering_jobs_cofounders_weekly/
+- **Reale Zero-Spend-Vertriebsaktion als Ausweichkanal:** Bestehendes Metricool-Konto `opslyshop` (Brand ID `7220354`), Instagram `@opslyco`, hatte einen freien verbundenen Postingkanal. Via Metricool-Publishing-API wurde **ein** sachlicher Feedbeitrag mit dem vorhandenen Original-Musterbild, dem **expliziten Hinweis FICTIONAL concept** und dem genehmigten Upwork-Link für **Montag, 12.10.2026, 10:00 Europe/Berlin** terminiert. Metricool-ID `393239683`, UUID `4706343109387045741`, Status **PENDING** (also noch **nicht** veröffentlicht). Planner:
+  https://app.metricool.com/planner/calendar?blogId=7220354&openWithPostUuid=4706343109387045741
+- Für Instagram wurden Metricools eigene Best-Time-Daten für die Folgewoche gelesen (Montag 10 Uhr gute Stunde). Der Anzeigen-Kanal bleibt **ergänzend**, weil frühere Pinterest/Instagram-Aktivität keinen starken Buyer-Intent bewiesen hatte. Keine bezahlte Promotion.
+- Bestehende ChatGPT-Automation `Opsly Kundenchancen prüfen` wurde angepasst, damit sie den realen Lese-Workflow, den unklaren Reddit-Chat und den für morgen geplanten Metricool-Beitrag korrekt berücksichtigt. Bei abgelaufenem Login oder fehlenden Gratis-Credits darf sie **keine erfolgreiche Inboxprüfung behaupten**, nichts kostenpflichtig buchen und nichts spammen.
+
+**Funnel nach diesem Durchlauf:** 1 Live-Upwork-Paket zu **USD 399**, 3 Dashboard-Aufrufe, 0 Bestellungen, 0 bestätigte Käuferantworten, 2 zuvor korrekt adressierte Reddit-Kontaktversuche, 1 alter r/smallbusiness-Promo-Kommentar, 0 neuer r/startups-Kommentar, 1 neuer Instagram-Beitrag **geplant**, 0 verifizierte Einnahmen.
+
+**Nächste Priorität:** Echte Upwork-Bestellung oder schriftliche Interessenten-Nachricht; dann Scope klären und nur nach bestätigter Bestellung/Vertrag produzieren. Nach 12.10. 10 Uhr tatsächliche Instagram-Publikation überprüfen. Nicht selbstständig die Reddit-CAPTCHA-Challenge umgehen und keine zweiten DMs an dieselben Leute senden.
