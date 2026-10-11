@@ -89,3 +89,21 @@ Die bislang genutzte authentifizierte Skyvern-Browsersitzung **ist nach vier Stu
 Neuer kostenloser Werbekanal identifiziert und Originalvorstellung für erlaubten `[OFFERING] [OFFER]`-Wochenthread von r/startups vorbereitet, **nicht veröffentlicht**. Details: [2026-10-11-sequenz-04-akquise.md](2026-10-11-sequenz-04-akquise.md).
 
 Nächste echte Ausführung: Authentifizierten Kontozugriff erneuern, **zuerst** Upwork-Projekte/Nachrichten und die zwei Reddit-Direktchats prüfen; danach, falls sinnvoll und erlaubt, **einen einzigen** passenden Thread-Kommentar veröffentlichen. Tägliches Benachrichtigungs-Monitoring bleibt angelegt, ist aber bei abgelaufenen Logins eingeschränkt. Kein bestätigter neuer Kunde oder Umsatz.
+
+
+## 11.10.2026 — Skyvern-Loginprofil funktioniert nachweislich in frischem Workflow
+
+User hat selbst in einer neu angelegten, eigens für Browser Profiles erzeugten Skyvern-Sitzung Upwork und Reddit angemeldet und via **Save Profile** gespeichert. Profil von Skyvern API unabhängig bestätigt:
+- Name: **Opsly Login**
+- Profile-ID: `bp_584266402178234806`
+- Keine Passwörter oder Cookies im GitHub-Projekt gespeichert.
+
+Einmalig angelegter, veröffentlichter und tatsächlich abgeschlossener read-only Lese-Test:
+- Workflow: **Opsly Loginprofil Wiederverwendung prüfen** (`wpid_584269597633904062`)
+- Run: `wr_584269674626582564` — https://app.skyvern.com/runs/wr_584269674626582564
+- Laufstatus **completed** und `browser_profile_id=bp_584266402178234806` im Skyvern-Lauf belegt.
+- **Upwork**: `authenticated=true`, Approved-Tab mit **1 sichtbarem Angebot**. Belegt tatsächliche Sessionwiederverwendung ohne erneut eingegebenes Passwort.
+- **Reddit**: `authenticated=true`, Benachrichtigungsseite geladen, eine Achievement-Benachrichtigung angezeigt; keine neue Login-/Human-Verification-Abfrage in diesem Test. Reddit-Username war auf der Notifications-Seite nicht explizit sichtbar und wurde im Test nicht erneut identifiziert.
+- Die Leseprüfung ist **keine** Bestellung, kein Kunde, keine Einnahme und kein Beweis, dass jede künftige Anmeldung oder CAPTCHA dauerhaft ausfällt.
+- Skyvern MCP `skyvern_browser_session_create` besitzt in dieser Konfiguration **kein** `browser_profile_id`-Feld; Profilwiederverwendung erfolgt über den verifizierten **Workflow** mit `browser_profile_id` und nicht über einen normalen leeren Browserstart.
+- Das tägliche Opsly-Condition-Watch-Monitoring `Opsly Kundenchancen prüfen` wurde aktualisiert, damit es diesen Workflow bei verfügbarem kostenlosen Skyvern-Kontingent bevorzugt und bei Login-Blockern den fehlenden Zugriff offenlegt; es führt keine Käufe durch und sendet ohne Bedarf keine Meldung.
