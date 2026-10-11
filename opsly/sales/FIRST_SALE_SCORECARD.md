@@ -78,3 +78,14 @@ https://www.reddit.com/chat/room/!OrcPNhAkwTHRg4_7UNVD0NXj3OJn2311J8SoBKSfEz0%3A
 **Neues Screening:** Eine aktuelle Reddit-Anzeige für eine Firmenwebseite inklusive dauerhafter Wartung bei 15.000 INR wurde **nicht** kontaktiert; dauerhaftes Maintenance-Scope und Preis passen nicht zum USD-399-Onepager. Ebenso zahlreiche `[For Hire]`-Anzeigen als Konkurrenten statt Kunden aussortiert.
 
 **Nächster sinnvoller Schritt:** Antworten in den beiden korrekt adressierten Reddit-Chats und echte Upwork-Bestellungen prüfen. Bei Käufern vor jedem Preisversprechen Hosting, CMS und Kundenmaterialien klären. Keine zweite identische DM versenden.
+
+
+## Checkpoint 11.10.2026 — Beginn der nächsten Akquise-Sequenz
+
+Die bislang genutzte authentifizierte Skyvern-Browsersitzung **ist nach vier Stunden abgelaufen** (10.10., 23:55 UTC). Eine neue Sitzung wurde eingerichtet, verlangt aber Upwork/Reddit-Login und ggf. menschliche Sicherheitsprüfung. **Deshalb sind weder aktuelle private Upwork-Aufträge noch neue Reddit-Antworten am 11.10. tatsächlich überprüft.** Alte Nullwerte bleiben historische Referenz und dürfen nicht als heutige Inbox-Messung dargestellt werden.
+
+Öffentlich wurden Reddit-Kaufgesuche erneut gesichtet, u. a. r/DesignJobs, r/forhire und r/slavelabour. Viele Suchtreffer sind konkurrierende Freelancer; die konkreten Anzeigen für Figma/SaaS-UI/UX oder billige WordPress/Wartungsaufträge passen nicht zum USD-399-Scope. **Keine neue geeignete Kundenanfrage und keine neue DM belegt.**
+
+Neuer kostenloser Werbekanal identifiziert und Originalvorstellung für erlaubten `[OFFERING] [OFFER]`-Wochenthread von r/startups vorbereitet, **nicht veröffentlicht**. Details: [2026-10-11-sequenz-04-akquise.md](2026-10-11-sequenz-04-akquise.md).
+
+Nächste echte Ausführung: Authentifizierten Kontozugriff erneuern, **zuerst** Upwork-Projekte/Nachrichten und die zwei Reddit-Direktchats prüfen; danach, falls sinnvoll und erlaubt, **einen einzigen** passenden Thread-Kommentar veröffentlichen. Tägliches Benachrichtigungs-Monitoring bleibt angelegt, ist aber bei abgelaufenen Logins eingeschränkt. Kein bestätigter neuer Kunde oder Umsatz.
