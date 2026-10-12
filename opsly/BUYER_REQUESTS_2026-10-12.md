@@ -31,3 +31,8 @@
 
 ## Entscheidungsregeln
 Käuferbedarf prüfen → Leistung/Preis/Lieferung belegen → zulässigen abgesicherten Bezahlkanal prüfen → nur original erlaubte Bewerbung → ausstehende Reaktionen ohne Doppelmail überwachen. Alle sieben Opsly-Schienen offenhalten, aber keine falschen Buyers oder Phantomumsätze zählen. 
+
+## Verkaufsvorbereitung aktualisiert am 12.10.2026
+- Eine echte **fiktive Excel-Arbeitsprobe** für die Datenbereinigungs-Chance wurde fertiggestellt, kontrolliert und in der Opsly-Library gespeichert: `/Opsly/SalesPortfolio/Opsly_Inventory_Data_Quality_Demo.xlsx` (Library-ID `libfile_0371128da73081918bbe9d28261621bf`). 12 synthetische Inventarzeilen, 7 READY, 5 REVIEW wegen fehlendem Preis, geschätztem Gewicht, negativem Reorderwert und SKU-Dubletten. Sheet `QA LOG` dokumentiert Entscheidungen. Formeln berechnet, 0 gefundene Formel-Fehler, visuelle Titelseite geprüft.
+- **Nicht** als früheren Kundenauftrag oder professionelles Zertifikat darstellen. Kein öffentlicher Downloadlink für private Library-Dateien behaupten. Im offiziellen Marktplatz bei erlaubter Bewerbung als eigene synthetische Arbeitsprobe anhängen, wenn der Marktplatz Dateianhänge erlaubt.
+- Alle offengelegten Buyer-Projekte NUR auf ihrer Originalplattform kontaktieren. Kein Ersatz durch Coldmail oder frei erfundene Käuferadresse.
