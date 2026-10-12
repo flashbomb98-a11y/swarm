@@ -3,7 +3,7 @@
 ## Zweck
 Diese kostenlose, abgekoppelte, **statische** Seite ist eine Portabilitäts- und Kontakt-Reserve für den bestehenden Opsly Market. Sie ist **keine** vollwertige Zahlungsredundanz. Stand: 12.10.2026.
 
-Quellcode: `opsly/standby-shop/index.html`. Veröffentlicht ist weiterhin nur das aktuelle Hauptsystem: https://opsly-market.floot.app .
+Quellcode: `opsly/standby-shop/index.html`. **Standby-Seite LIVE und überprüft seit 12.10.2026** unter https://opsly-standby-site.onrender.com/ (HTTP 200, alle sieben Produktlinien geprüft). Hauptshop weiterhin https://opsly-market.floot.app . Render Static Site ID `srv-db6bkoqd0e5s73a4s22g`, initialer Deploy `dep-db6bkpad0e5s73a4s3s0`, Status `live` am 12.10.2026 10:46 UTC. Workspace `tea-db0n9s8u01pc73b491d0` durch Nutzer bestätigt. `autoDeploy=no`: Änderungen am GitHub-Repo lösen bewusst keinen neuen Render-Build aus. Repository `https://github.com/flashbomb98-a11y/swarm`, Branch `master`, Build `test -f opsly/standby-shop/index.html && mkdir -p opsly-standby-public && cp opsly/standby-shop/index.html opsly-standby-public/index.html`, Publish path `opsly-standby-public`. Ausschließlich `index.html` wird in die öffentliche Standby-Site kopiert. Externer Live-Crawl meldete 200 und die erwarteten Kontaktlinks. **Keine zweite identische statische Site erstellen.**
 
 ## Was funktioniert
 - Sieben Opsly-Linien im einheitlichen deutschen Markendesign #111821 / #C8FF3D.
@@ -19,7 +19,7 @@ Quellcode: `opsly/standby-shop/index.html`. Veröffentlicht ist weiterhin nur da
 - Das Repo darf KEINE Stripe-Zugangsdaten, live `sk_*`/Webhook-Secrets, personenbezogenen Bestellungen, privaten Kauf-ZIPs oder Kunden-Datensätze enthalten.
 
 ## Kostenfreie Deployment-Optionen
-**Render:** Im bestehenden verbundenen Render-Konto ist genau ein Workspace sichtbar (`Opsly's workspace`). Render verlangt für Workspace-Aktionen jedoch explizite Bestätigung der Workspace-Auswahl; nicht eigenmächtig auswählen. Nach Bestätigung: neues **Static Site**-Projekt, GitHub-Repo `flashbomb98-a11y/swarm`, Branch `master`, Root/Publish Directory `opsly/standby-shop`, kein Build-Schritt erforderlich. Vorher Monatskontingente für Bandbreite und Build-Pipeline im Dashboard prüfen. Keine kostenpflichtigen Dienstleistungen/Planänderungen.
+**Render:** Workspace `Opsly's workspace` ist vom Nutzer ausdrücklich bestätigt; das kostenlose **Static-Site-Projekt ist eingerichtet und live** (Details siehe oben). Kein zweites Projekt anlegen. Vor eventuellen späteren Deploys den Standby-Code und die veröffentlichten Paketpreise prüfen, dann manuell genau diesen Service deployen. Das Render-Static-Site-Angebot hat keine eigenen Compute-Instanzgebühren, verwendet aber monatliche gemeinsame Freikontingente für Bandbreite und Build-Minuten; bei Überschreitung können je nach hinterlegter Zahlungsmethode Nutzungsgebühren anfallen. Die Connector-Verbindung legt keine Rechnungs- oder Limitkonfiguration offen. Automatische Deployments bewusst aus, `noindex,nofollow`, nicht als öffentliche Hauptshop-Adresse bewerben. Keine kostenpflichtigen Planänderungen.
 
 **Cloudflare Pages:** Noch nicht verbunden. Kostenloses statisches Pages-Projekt aus demselben GitHub-Pfad mit 500 kostenlosen Builds/Monat möglich; öffentliches Asset-Serving ist im statischen Free-Modell kostenlos. `root directory=opsly/standby-shop`, `build command` leer bzw. `exit 0`, `build output directory=.`. Vor Verbinden Account-/Projektlimits prüfen. Keine API-Tokens veröffentlichen.
 
