@@ -3,5 +3,10 @@
     "label": "hn-freelance",
     "url": "https://hnrss.org/whoishiring/freelance",
     "approved_host": "hnrss.org"
+  },
+  {
+    "label": "hn-contract-requests-mirror",
+    "url": "https://hnrss.kakwalab.ovh/whoishiring/jobs?q=freelance",
+    "approved_host": "hnrss.kakwalab.ovh"
   }
 ]
