@@ -61,6 +61,17 @@ def main():
             errors.append("hardcoded credential/token")
     if "noch keinen eigenständigen Checkout" not in content:
         errors.append("standby site must disclose checkout limitation")
+    # Shared Opsly design tokens must stay identical across releases.
+    palette = ("#111821", "#25303C", "#1B262E", "#3C4A54", "#C8FF3D", "#F6F8F7", "#B9C6CA")
+    for hex_color in palette:
+        if hex_color not in content:
+            errors.append("canonical palette color missing: " + hex_color)
+    for typo in ("OpslyCo", "OplsyCo", "Opslyshop", "OpslyShop"):
+        if typo in content:
+            errors.append("forbidden public brand alias: " + typo)
+    unknown_colors = set(re.findall(r"#[0-9a-fA-F]{6}\\b", content)) - set(palette)
+    if unknown_colors:
+        errors.append("non-brand CSS colors: " + ", ".join(sorted(unknown_colors)))
     if errors:
         print("FAILED:\n - " + "\n - ".join(errors))
         return 1
