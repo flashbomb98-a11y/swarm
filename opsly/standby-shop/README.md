@@ -42,3 +42,9 @@ Quellcode: `opsly/standby-shop/index.html`. **Standby-Seite LIVE und überprüft
 
 ## Qualität
 `python3 opsly/standby-shop/validate.py` prüft die statische Seite lokal ohne zusätzliche Bibliotheken. Die Existenz des Quellcodes in GitHub ist **noch keine** Online-Veröffentlichung.
+
+## Einheitsdesign ist jetzt live – 12.10.2026
+- Der vom Nutzer bestätigte Opsly-Gestaltungsstandard steht in `opsly/DESIGN_SYSTEM.md` und `opsly/BRAND_STANDARD.md`.
+- Live-Standby-Styles verwenden **ausschließlich** `#111821`, `#25303C`, `#1B262E`, `#3C4A54`, `#C8FF3D`, `#F6F8F7`, `#B9C6CA`; keine Fremdfarben. Aktuelle Codeversion: Commit `59a09698d60962071f4843b8b00cdff9472ca059`.
+- Render EINMAL manuell aus dem bestehenden Repo nachgezogen: Deploy `dep-db6c91t9fdbs73fkol3g` am 12.10.2026 11:29 UTC **LIVE**. Externer Live-Test lieferte HTTP 200, dieselben 7 Farbwerte in `rawHtml`, 7 Opsly-Geschäftslinien, keine falsche Brandbezeichnung, 6 Etsy-Links. Keine zusätzlichen Server, AutoDeploy weiterhin aus.
+- Prüfer `opsly/standby-shop/validate.py` schlägt bei unerlaubten HEX-Farben, alten öffentlichen Brandaliasen und defekten internen Links fehl. Er prüft eine statische HTML-Seite, nicht Etsy-/Stripe-Kaufbarkeit. Bei künftigem Hauptshop-Design nach Floot-Freigabe dieselbe Farbtabelle verwenden und danach auf Live-Rendering/Gesamtfunktion vergleichen.
