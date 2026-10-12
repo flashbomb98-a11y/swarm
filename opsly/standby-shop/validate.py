@@ -69,7 +69,7 @@ def main():
     for typo in ("OpslyCo", "OplsyCo", "Opslyshop", "OpslyShop"):
         if typo in content:
             errors.append("forbidden public brand alias: " + typo)
-    unknown_colors = set(re.findall(r"#[0-9a-fA-F]{6}\\b", content)) - set(palette)
+    unknown_colors = set(re.findall(r"#[0-9a-fA-F]{6}", content)) - set(palette)
     if unknown_colors:
         errors.append("non-brand CSS colors: " + ", ".join(sorted(unknown_colors)))
     if errors:
