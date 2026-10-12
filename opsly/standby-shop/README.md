@@ -5,6 +5,13 @@ Diese kostenlose, abgekoppelte, **statische** Seite ist eine Portabilitäts- und
 
 Quellcode: `opsly/standby-shop/index.html`. **Standby-Seite LIVE und überprüft seit 12.10.2026** unter https://opsly-standby-site.onrender.com/ (HTTP 200, alle sieben Produktlinien geprüft). Hauptshop weiterhin https://opsly-market.floot.app . Render Static Site ID `srv-db6bkoqd0e5s73a4s22g`, initialer Deploy `dep-db6bkpad0e5s73a4s3s0`, Status `live` am 12.10.2026 10:46 UTC. Workspace `tea-db0n9s8u01pc73b491d0` durch Nutzer bestätigt. `autoDeploy=no`: Änderungen am GitHub-Repo lösen bewusst keinen neuen Render-Build aus. Repository `https://github.com/flashbomb98-a11y/swarm`, Branch `master`, Build `test -f opsly/standby-shop/index.html && mkdir -p opsly-standby-public && cp opsly/standby-shop/index.html opsly-standby-public/index.html`, Publish path `opsly-standby-public`. Ausschließlich `index.html` wird in die öffentliche Standby-Site kopiert. Externer Live-Crawl meldete 200 und die erwarteten Kontaktlinks. **Keine zweite identische statische Site erstellen.**
 
+## Zweiter Verkaufsweg aktualisiert – 12.10.2026
+- Render Static Site `srv-db6bkoqd0e5s73a4s22g` wurde nach der bereits vorhandenen Anlage gezielt ein zweites Mal deployt, NICHT ein zweiter Service erstellt. Deploy `dep-db6c1o59fdbs73fk1r00` vom GitHub-Commit `8c2a8c5fd005a676771c7d91700791b3482146c1` hat Status **live**.
+- Öffentlicher Live-GET https://opsly-standby-site.onrender.com/ gab **HTTP 200**, enthält alle **sechs** direkten Etsy-Produktlinks von Opsly Business und `opsly-business@agentmail.to` für Rückfragen.
+- Die sechs Linkziele und Produkt-IDs stehen bereits auf dem ursprünglichen Opsly-Market und im älteren Etsy-Release-Inventar. **Etsy-Produktseiten selbst sind unabhängig NICHT abschließend auf kaufbaren Zustand geprüft**: automatisierter Test der ersten Seite wurde vom Etsy-Captcha blockiert, Exa-Treffer liefen in Timeouts. Keine Umgehung oder erfundene aktive Listings.
+- Die direkten Etsy-URLs erfordern keinen Floot-Checkout, aber ob alle sechs Listings aktuell kaufbar sind, muss vor einer Werbekampagne im authentifizierten Etsy-Shop-Manager geprüft werden. Falls Käufer dort kaufen, gelten Etsy-eigene Checkout- und Downloadabläufe; nicht als eigene geprüfte Opsly-Stripe-Fulfillmentstrecke darstellen.
+- Kein neuer Bezahldienst, kein zusätzlicher Render-Service, kein AutoDeploy, kein Hosting-Upgrade. Render Build-Ausgabenlimit laut Nutzer-Screenshot **0 $** und Konto **ohne hinterlegte Karte**, von Nutzer belegt am 12.10.2026.
+
 ## Was funktioniert
 - Sieben Opsly-Linien im einheitlichen deutschen Markendesign #111821 / #C8FF3D.
 - Statische Produkt- und Dienstleistungsinformation ohne Laufzeitserver, Framework, Webfont, Tracking-Script, Cookies oder externe Dienste.
