@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111821">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Opsly: B2B-Recherche, kleine Firmenwebsites und digitale Werkzeuge für echte Arbeitsabläufe.">
+  <title>Opsly — Klar arbeiten. Direkt weiterkommen.</title>
+  <style>
+    :root {color-scheme:dark;--ink:#111821;--surface:#1e2933;--line:#34424d;--lime:#c8ff3d;--text:#f6f8f7;--muted:#b9c6ca;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--ink);color:var(--text);line-height:1.55}
+    a{color:inherit}
+    a:focus-visible{outline:3px solid var(--lime);outline-offset:4px}
+    .skip{position:absolute;transform:translateY(-160%);padding:.65rem;background:var(--lime);color:var(--ink);z-index:100}
+    .skip:focus{transform:translateY(0)}
+    .wrap{width:min(1120px,calc(100% - 2.5rem));margin-inline:auto}
+    header{border-bottom:1px solid var(--line)}
+    header .wrap{display:flex;gap:1.5rem;align-items:center;justify-content:space-between;min-height:76px;flex-wrap:wrap}
+    .brand{font-weight:900;font-size:1.55rem;letter-spacing:-.055em;text-decoration:none}
+    .brand::before{content:"";width:.8rem;height:.8rem;display:inline-block;background:var(--lime);border-radius:2px;transform:rotate(-12deg);margin-right:.65rem}
+    nav{display:flex;gap:1.2rem;flex-wrap:wrap}nav a{text-decoration:none;font-weight:650;color:var(--muted);font-size:.93rem}nav a:hover{color:var(--lime)}
+    .eyebrow{color:var(--lime);font-size:.84rem;text-transform:uppercase;letter-spacing:.18em;font-weight:800}
+    .hero{padding:clamp(3.2rem,7vw,6.3rem) 0 3.7rem;max-width:850px}
+    h1{font-size:clamp(2.65rem,6.5vw,5.15rem);line-height:1.06;letter-spacing:-.065em;margin:.65rem 0 1.5rem}
+    h1 span{color:var(--lime)}
+    .lead{font-size:clamp(1.07rem,2vw,1.3rem);color:var(--muted);max-width:700px;margin-bottom:1.8rem}
+    .actions{display:flex;gap:.85rem;flex-wrap:wrap}
+    .button{display:inline-flex;min-height:48px;align-items:center;justify-content:center;padding:.7rem 1.25rem;border-radius:.7rem;background:var(--lime);color:var(--ink);font-weight:800;text-decoration:none;border:1px solid var(--lime)}
+    .button.alt{background:transparent;color:var(--text);border-color:var(--line)}
+    .button:hover{filter:brightness(1.08)}
+    .note{padding:.75rem 1.05rem;border-left:3px solid var(--lime);background:#1b262e;color:var(--muted);font-size:.94rem;margin:1.4rem 0 0}
+    main section{padding:3.3rem 0}
+    h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.04em;line-height:1.16;margin:.2rem 0 1rem}
+    .intro{max-width:70ch;color:var(--muted);margin-bottom:1.6rem}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+    .card{display:flex;flex-direction:column;min-height:260px;padding:1.3rem;border-radius:1rem;border:1px solid var(--line);background:var(--surface)}
+    .card .type{text-transform:uppercase;letter-spacing:.13em;color:var(--lime);font-weight:800;font-size:.73rem}
+    .card h3{margin:.6rem 0 .5rem;font-size:1.24rem;letter-spacing:-.02em}
+    .card p{color:var(--muted);margin:.1rem 0 1rem;font-size:.94rem}
+    .bottom{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+    .price{font-size:1.15rem;font-weight:850;font-variant-numeric:tabular-nums}
+    .card a{color:var(--lime);font-size:.93rem;font-weight:750;text-underline-offset:4px}
+    .wide{grid-column:span 2}
+    .wide .bottom{justify-content:flex-start;gap:1.5rem}
+    #kontakt{padding-bottom:5rem}
+    .contact{padding:clamp(1.5rem,5vw,2.7rem);background:#24303a;border:1px solid var(--line);border-radius:1rem}
+    .contact p{max-width:65ch;color:var(--muted)}
+    footer{border-top:1px solid var(--line);padding:1.4rem 0 2rem;color:var(--muted);font-size:.83rem}
+    footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+    @media(max-width:860px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:580px){.wrap{width:min(100% - 1.35rem,1120px)}nav{gap:.75rem}nav a{font-size:.82rem}.grid{grid-template-columns:1fr}.wide{grid-column:auto}.hero{padding-top:3rem}header .wrap{padding:1rem 0}.card{min-height:230px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+  <header><div class="wrap">
+    <a class="brand" href="#start" aria-label="Opsly Startseite">Opsly</a>
+    <nav aria-label="Hauptnavigation"><a href="#leistungen">Leistungen</a><a href="#downloads">Digitale Produkte</a><a href="#kontakt">Kontakt</a></nav>
+  </div></header>
+  <main id="inhalt">
+    <div id="start" class="wrap">
+      <div class="hero">
+        <div class="eyebrow">Digitale Werkzeuge. Klare Ergebnisse.</div>
+        <h1>Weniger Aufwand.<br><span>Mehr erledigen.</span></h1>
+        <p class="lead">Opsly hilft kleinen Unternehmen und Selbstständigen mit B2B-Zielkundenrecherche, kompakten Websites und sofort nutzbaren digitalen Werkzeugen.</p>
+        <div class="actions"><a class="button" href="#leistungen">Angebote ansehen</a><a class="button alt" href="mailto:opsly-sales@agentmail.to?subject=Anfrage%20an%20Opsly">Projekt anfragen</a></div>
+        <p class="note">Diese unabhängige Informationsseite ist ein zusätzlicher Zugang zu Opsly. Online-Käufe werden derzeit im <a href="https://opsly-market.floot.app/">bestehenden Hauptshop</a> abgewickelt; dieser Ausweichzugang besitzt noch keinen eigenständigen Checkout.</p>
+      </div>
+    </div>
+    <section id="leistungen" class="wrap">
+      <div class="eyebrow">Direkte Leistungen</div><h2>Ein klarer Umfang. Kein Rätselraten.</h2>
+      <p class="intro">Die Preise gelten für die beschriebenen Einstiegspakete. Umfang und Lieferbedingungen werden vor Auftragserteilung abgestimmt.</p>
+      <div class="grid">
+        <article class="card wide"><div class="type">Opsly Web Studio</div><h3>Eine professionelle Onepage für dein Unternehmen</h3><p>Responsive HTML/CSS/JavaScript-Website mit bis zu fünf Abschnitten, einer Korrekturrunde und editierbaren Quelldateien. Fünf Werktage ab vollständiger Freigabe deiner Inhalte. Keine Domain, kein Hosting, kein CMS, kein Shop, kein Buchungssystem und kein Backend-Kontaktformular.</p><div class="bottom"><span class="price">349 €</span><a href="https://opsly-market.floot.app/#website-service">Paket im Hauptshop ansehen ↗</a><a href="mailto:opsly-sales@agentmail.to?subject=Opsly%20Web%20Studio%20Anfrage">Umfang anfragen ↗</a></div></article>
+        <article class="card"><div class="type">Opsly Sales</div><h3>B2B-Zielkundenrecherche</h3><p>Fünf passende Zielunternehmen als Fit-Check für deinen ICP. Recherche auf Unternehmensebene, keine gekauften Massenlisten.</p><div class="bottom"><span class="price">ab 9 €</span><a href="https://opsly-market.floot.app/#direct-products">Sales-Angebote ↗</a></div></article>
+      </div>
+    </section>
+    <section id="downloads" class="wrap">
+      <div class="eyebrow">Unabhängige Produktlinien</div><h2>Werkzeuge, Vorlagen und Creator-Dateien</h2>
+      <p class="intro">Digitale Lieferungen und die genauen Nutzungsbedingungen werden im Hauptshop angezeigt. Produktdownloads sind keine Website-Dienstleistung.</p>
+      <div class="grid">
+        <article class="card"><div class="type">Opsly Business</div><h3>Operations- und Inventarvorlagen</h3><p>Praxisorientierte Excel-Vorlagen für Lagerbestände, Nachbestellung, Kennzahlen und die Organisation wiederkehrender Arbeitsabläufe.</p><div class="bottom"><a href="https://opsly-market.floot.app/">Vorlagen ansehen ↗</a></div></article>
+        <article class="card"><div class="type">Opsly Tools</div><h3>Digital Seller Margin Lab</h3><p>Offline-HTML-Rechner für Kosten, Gebühren, Gewinnspanne und Zielverkaufspreise.</p><div class="bottom"><span class="price">6,90 €</span><a href="https://opsly-market.floot.app/#direct-products">Produkt ansehen ↗</a></div></article>
+        <article class="card"><div class="type">Opsly Visual</div><h3>Neon Grid Stream Overlay</h3><p>Vier OBS-Browser-Source-Szenen für Starting Soon, BRB, Ending und Gameplay.</p><div class="bottom"><span class="price">8,90 €</span><a href="https://opsly-market.floot.app/#direct-products">Produkt ansehen ↗</a></div></article>
+        <article class="card"><div class="type">Opsly Audio</div><h3>Neon UI Alerts</h3><p>24 eigenständige WAV-Soundeffekte für Streams, Games und digitale Benutzeroberflächen.</p><div class="bottom"><span class="price">5,90 €</span><a href="https://opsly-market.floot.app/#direct-products">Produkt ansehen ↗</a></div></article>
+        <article class="card"><div class="type">Opsly Lab</div><h3>Campaign Continuity Console</h3><p>Lokales Offline-Werkzeug für Spielleitungen: NPCs, Quests, Hinweise, Sitzungen und offene Handlungsstränge organisieren.</p><div class="bottom"><span class="price">8,90 €</span><a href="https://opsly-market.floot.app/#direct-products">Produkt ansehen ↗</a></div></article>
+      </div>
+    </section>
+    <section id="kontakt" class="wrap">
+      <div class="contact">
+        <div class="eyebrow">Direkter Kontakt</div>
+        <h2>Ein konkretes Problem? Schreib uns.</h2>
+        <p>Beschreibe kurz dein Unternehmen, den gewünschten Umfang und deinen Zeitrahmen. Für individuelle Projekte erhältst du eine Rückmeldung zu Machbarkeit, Lieferung und Kaufweg. Keine Zahlungsdaten per E-Mail senden.</p>
+        <a class="button" href="mailto:opsly-sales@agentmail.to?subject=Opsly%20Projektanfrage&body=Hallo%20Opsly%2C%0A%0AIch%20brauche%20Unterstuetzung%20bei%3A%20%0AUmfang%3A%20%0AZeitplan%3A%20%0A">Anfrage per E-Mail stellen</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© 2026 Opsly · Alle Geschäftsbereiche unter einer Marke</span><span>Standby-Website · Keine eigenen Cookies, keine Formulare, kein Checkout</span></div></footer>
+</body>
+</html>
