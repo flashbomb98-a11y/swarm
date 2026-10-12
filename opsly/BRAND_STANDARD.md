@@ -2,6 +2,11 @@
 
 Stand: 12.10.2026. Dachmarke ausschließlich **Opsly**. Nie OpslyCo, Opslyshop oder abweichende Schreibweisen als Markenname verwenden. Bestehende technische Handles @opslyco und @opslyshop sind nicht die Markenbezeichnung und müssen bei einer zulässigen Profilumbenennung auf Opsly ausgerichtet werden; bis dahin sichtbare Profilnamen/Bios auf Opsly setzen, sofern verfügbar.
 
+## Verbindliche Designquelle
+- **Einzige maßgebliche Gestaltungsreferenz ist [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md).** Kein eigenes Farbschema, eigene Hauptschrift oder abweichendes Logo für Shops, Social, Etsy, Upwork, Stripe-Checkout, Produktcover, E-Mails oder eine der sieben Linien. Bestehendes funktionales Produkt-UI behutsam und mit Tests aktualisieren; nicht blind überschreiben.
+- Markenfehler blockieren neue Marketingkampagnen, nicht bereits bezahlte Bestellungen; Live-Checkout meldete **OplsyCo** (zu korrigierender Stripe-Anzeigename). Ältere technische Handles und legale Firmennamen nicht ohne Plattformberechtigung umbenennen.
+- Alle neuen öffentlichen Assets vor Freigabe an sechs Kriterien prüfen: Name, Palette, Typografie, Sprachkonsistenz, Preis und funktionierender Kauf-/Kontaktweg. Keine „fertig“-Behauptung ohne Live-Nachweis.
+
 ## Markenidentität
 - Einheitliche Dachmarke Opsly. Unterbereiche: Opsly Business, Opsly Sales, Opsly Web Studio, Opsly Tools, Opsly Visual, Opsly Audio, Opsly Lab.
 - DACH-Kampagnen: Deutsch, einheitliche Ansprache pro Kanal. Englisch nur bei bewusst internationaler Zielgruppe. Produktinhalte dürfen englisch bleiben, wenn dies für internationalen Markt oder Softwarefunktion fachlich notwendig ist; keine unabsichtliche Sprachmischung.
