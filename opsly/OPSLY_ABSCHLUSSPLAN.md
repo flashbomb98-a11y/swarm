@@ -35,7 +35,7 @@ Abschluss der einmaligen Aufbau-/Bereinigungssequenz bei tatsächlichem Zugriff 
 
 ## SEQUENZ 2 – Profile einmalig FERTIGSTELLEN
 
-**Status: OFFEN, nur eine vorbereitete Sammelsitzung für tatsächliche Logins/Berechtigungen.**
+**Status: EXTERN BLOCKIERT – Einzelkorrekturen noch nicht LIVE (13.10.2026).** Browserfreigabe: keine Skyvern-Live-Sitzung, Skyvern-Neustart meldete Guthabenerschöpfung (402); Opera-Connector ist nicht authentifiziert. Metricool bietet hier geplante Posts/Analytics, aber keine veröffentlichte Profil-/Pinbearbeitung. Kein Accountversprechen ohne Editor.
 
 - [ ] **Instagram @opslyco**: echtes Avatarbild vom Nutzer laut Bestätigung geändert; öffentlich sichtbaren Avatar, sichtbaren Profilnamen Opsly, Bio, einen stimmigen Ziel-Link und ggf. alte OpslyCo-Textstellen prüfen/korrigieren. Den technischen Handle nicht ohne Kontosicherheit/Brand-Redirect ändern. Live-Screenshot oder legitimer API-Beleg nach Änderung.
 - [ ] **Pinterest @opslyshop**: Nutzer bestätigte Avatarumstellung. Profilname, Bio, Profil-Link prüfen; fünf alte Etsy-OpslyCo-Shop-Link-Pins nach legitimer Anmeldung einzeln auf passendes belegtes Ziel ändern. Keine Massenlöschung, Bild eines veröffentlichten Pins ist ggf. nicht ersetzbar; alte helle Pins erhalten/archivieren nur mit berechtigter Entscheidung und ohne Verlust bestehender URLs.
@@ -47,12 +47,12 @@ Abschluss der einmaligen Aufbau-/Bereinigungssequenz bei tatsächlichem Zugriff 
 
 ## SEQUENZ 3 – Angebotskern, rechtliche Freigabe, Kauf- und Lieferprozess
 
-**Status: TECHNISCH TEILWEISE LIVE, RECHTLICH UNGEKLÄRT.**
+**Status: TECHNISCH TEILWEISE LIVE, RECHTLICH UNGEKLÄRT (Gate ROT, 13.10.).**
 
 - [x] Bestehender Floot-Hauptshop live, sieben Rubriken, Opsly-Dark/Lime-Auftritt. Keine neue Site bauen.
 - [x] Bei sechs bisherigen freigeschalteten Angeboten wurde Erstellung echter Stripe-Live-Checkout-Sessions OHNE Bezahlung überprüft. Seller Margin Lab: unbezahlter Bestellaufruf ohne Downloadlink.
 - [ ] **Rechtlicher Risikoschnitt zuerst:** Neuss/Deutschland, Nutzer hat bislang keine Anmeldung gewünscht. Gewerblicher Tätigkeitsbeginn ist nicht vom ersten Umsatz abhängig; aufgetretene Aktivität/öffentliche Checkout-Buttons können schon meldepflichtig sein (§14 GewO). Verantwortliche Person und Impressum/Datenschutz/Widerruf fehlen öffentlich. Keine stillschweigende Rechtsfreigabe. **Klares Entscheidungs-Gate**: Entweder Betreiber klärt Meldung und Angaben und erlaubt rechtskonformen Vertrieb, ODER die bestehenden Live-Kaufbuttons/öffentliche Verkaufsansprache werden mit seiner Freigabe über den regulär erlaubten Weg vorübergehend pausiert und in unverbindliche Anfragen verwandelt. Solange weder Entscheidung noch rechtmäßiger Zugang vorliegt: ROT, keine neuen verbindlichen Verkaufsaktionen.
-- [ ] **Lieferfähigkeit begrenzen statt expandieren:** Excel-Datenbereinigung mit dokumentierter synthetischer Probe und statische Web-Studio-Onepage anhand echter vorhandener Fähigkeiten. Nicht sieben Produktlinien zur Bedingung eines fertigen Vertriebsprojekts machen. Klare Scope- und Lieferzeiten, keine fiktiven Kundenreferenzen.
+- [x] **Kernangebote begrenzt und abgeglichen:** Excel-/Inventardatenbereinigung (ehrlich synthetische QA-XLSX-Arbeitsprobe in persönlicher Library `/Opsly/SalesPortfolio/Opsly_Inventory_Data_Quality_Demo.xlsx`, Bestand 12 Testdatensätze, 7 READY/5 REVIEW) mit Ergebnis XLSX plus nachvollziehbares Änderungsprotokoll; Preis erst nach konkreter Zeilenanzahl, Dubletten-/Freigaberegeln, gewünschter Frist. Zweitens bestehendes live Upwork-Web-Studio-Listing $399 mit bis zu fünf Abschnitten, 1 Korrekturrunde, 5 Werktagen ab vollständig freigegebenen Kundentexten und HTML/CSS/JS-Quelldateien, explizit ohne Domain/Hosting/CMS/E-Commerce/Server-Formulare. Keine weiteren neuen Verkaufsprodukte. **Dokumentierte Angebotsfähigkeit, kein erprobter bezahlter Kundenauftrag.**
 - [ ] Vor regulären direkten Verkäufen rechtlich zulässigen Checkout-/Verbraucherflow, Zahlungsstatus, Rückabwicklung und korrekte geschützte Lieferung nachweisen. Stripe Testmodus wo erlaubt ohne echte Zahlungen; bezahlte Live-Auslieferung erst bei echter legal abgewickelter Kundenbestellung belegbar. Bis dahin 'voll bezahlte Lieferung verifiziert' = NEIN.
 - [x] Floot Visual/Lab sind LIVE gesperrt, weil Sicherheitsfreigabe für neue Paywall-Publikation blockiert wurde. **Nicht in die Launch-Kritikalität aufnehmen, nicht umgehen**, keinen neuen ZIP-Public-Upload. Deaktiviert und explizit als 'nicht verfügbar' ist für die vorläufige Abschlussscope ausreichend.
 
@@ -64,9 +64,9 @@ Abschluss der einmaligen Aufbau-/Bereinigungssequenz bei tatsächlichem Zugriff 
 
 - [x] Synthetische Excel-Probe in Library, zwei am 13.10. öffentlich offene Freelancer-Excel-Aufträge geprüft und passende Bewerbungstexte in GitHub vorbereitet. NICHT versendet; letzter legitimer Gebotsversuch wurde sicherheitsgeblockt, nicht umgehen.
 - [x] Upwork $399 Katalog bereits öffentlich, aber noch ohne Optimierungen; kein Käufer bestätigt.
-- [ ] Ein EINZIGER Outreach-/Vertriebsverantwortlicher, maximal zwei aktuelle tatsächlich budgetierte Buyer Requests pro Lauf; aus jedem nur eine zulässige unverbindliche Kontaktaufnahme, falls Login/Plattform/Sicherheits- und Rechtsstatus dies erlauben. Kein weiterer generischer Coldmailversand.
+- [x] **Einziger Outreach-Verantwortlicher tatsächlich konfiguriert**: Automation `Opsly: Einziger Käufer-Test`, befristet bis 27.10.2026, täglich max. zwei echte budgetierte Buyer Requests, ohne neue Coldmails oder zusätzliche Produktentwicklung. **Bisher keine offiziell abgeschickte Freelancer-Bewerbung**; konkrete Plattformaktionen derzeit gesperrt und keine verbindlichen Aufträge wegen rechtlichem Gate. Die Vertrags-/Zustellwirkung einer Kundenanfrage ist nicht getestet.
 - [ ] Für jede ernsthafte Reaktion: Zeitpunkt, Kaufbedarf, Budget, direkte Antwort, nächste Entscheidung und tatsächlicher Status festhalten. Nur tatsächliche Kundenantwort = Interessent; öffentliche Jobanzeige alleine ist NICHT unser Lead oder Umsatz.
-- [ ] Eine stündliche AgentMail-Eingangswache als einzige Rücklauf-Überwachung, keine parallelen Abfragen/Alarm-Duplikate. Nutzer nur bei echter Käuferantwort, tatsächlichem Geld, oder EINER unvermeidlichen Anmeldung/Entscheidung benachrichtigen.
+- [x] **Einzige AgentMail-Eingangswache aktiv**: Automation `Opsly Echte Kundenantworten`, stündlich in Sales/Business/Visual; andere Inbox-/Nacht-/Shop-/Brand-Automatiken deaktiviert. Eingänge mit Tests/Dubletten filtern und erst bei echter Antwort einmal benachrichtigen. Kein echter Kundeneingang bis zur letzten Belegprüfung.
 - [ ] Nach beendeter Aufbauphase: nur noch Sales- und Supportbetrieb, keine neuen technische Sequenz ohne belegten Verkaufsfehler.
 
 **Abnahme:** Eindeutiger Verkaufsprozess läuft, Käufer-Reaktionen werden korrekt erfasst, ein seriöser Statusbericht ohne erfundene Einnahmen. Erste Zahlung ist eigenständiges Umsatzziel, NICHT als Voraussetzung dafür zu behaupten, dass die einmalige Aufbauarbeit erledigt ist.
@@ -77,10 +77,21 @@ Abschluss der einmaligen Aufbau-/Bereinigungssequenz bei tatsächlichem Zugriff 
 
 - [ ] Jeden Punkt der Sequenzen 1–4 einzeln nachprüfen, Beleg verlinken, keine 'fertig' anhand unveröffentlichter Dateien vergeben.
 - [ ] Alle Plattformen zusammen mit einem echten Logo/Markennamen und unverfälschter Verkäuferidentität konsistent; zwingend offene Profile genau benennen statt neue Fantasie-Aufgaben anlegen.
-- [ ] Eigene technische Risiken und Rechtsstatus als echte rote oder grüne Gates dokumentieren, kein Sicherheitsblocker umgangen und kein Kostenpunkt ausgelöst.
-- [ ] Alle wiederkehrenden AUFBAU-Automatiken dauerhaft AUS; maximal Buyer-Test (bis 27.10.2026) und Inbox-Überwachung an.
+- [x] **Risiken und Gate ROT verifiziert**: Live-Stripe-Lesetest 13.10. zeigt `charges_enabled:true` und `payouts_enabled:true`, aber öffentlich `OplsyCo`, Dashboard `Oplsy`, `branding.icon/logo:null`, Markenfarben null, `support_email:null`, alte Etsy-URL; 0 Charges/0 PaymentIntents/0 EUR available und pending. Offene gesetzliche Anbieterkennzeichnung/Anmeldung/Kaufrechte sowie Plattform-/Publish-Sperren genau beschrieben. Keine neuen Kosten oder Sperrumgehung im Abschlussdurchgang.
+- [x] Wiederkehrende Aufbau-Automatiken AUS; nur `Opsly: Einziger Käufer-Test` (endet 27.10.2026) und `Opsly Echte Kundenantworten` (stündlich) sind AKTIV. Zuletzt vorliegende interne Automationsliste geprüft, keine neuen Automationen angelegt.
 - [ ] Schlussmeldung in genau vier Kennzahlen: echte qualifizierte Gespräche, abgeschickte zulässige Bewerbungen, bestätigte Käufe, bestätigter Netto-Umsatz. Zusätzlich ein Satz zu noch zwingenden menschlichen Freigaben.
 - [ ] Projektstatus erst dann **AUFBAU ABGESCHLOSSEN** setzen, wenn alle tatsächlich nötigen Abnahmekriterien nachweislich erfüllt sind. Wo ein externer Zugang auf Dauer blockiert ist, offen **TEILFERTIG – EXTERN BLOCKIERT** ausgeben und nicht wieder mit sinnlosen Wiederholungen anfangen.
+
+
+### Abschlussdurchgang 13.10.2026 – überprüfte externe Profile und harte Stopps
+
+- **Upwork: ÖFFENTLICHES LISTING verifiziert** unter https://www.upwork.com/services/product/development-it-a-modern-responsive-one-page-website-for-your-small-business-2109015259874676124. Titel noch `You will get a mobile-friendly one-page website for your small business`, unverändert und keine echte Opsly-Cover-Änderung. Text enthält sachliche Scope-Angaben; noch kein verifizierter Auftrag. Editor-Zugriff Cloudflare-blockiert, nicht umgehen.
+- **Instagram @opslyco und Pinterest @opslyshop:** bereits vom Nutzer selbst korrigierte Avatarbilder sind unbestritten, aber hier KEINE unabhängige öffentliche Profilbild-/Bio-Validierung (Instagram/Pinterest öffentliche Seiten aktuell nicht auslesbar; Metricool gibt den technischen Handle, keine Profil-Edit-Schnittstelle). Nicht fertig behaupten.
+- **Pinterest alte Pins:** fünf mit OpslyCo-Shoplink bleiben; kein legitimer Pin-Editor verfügbar. Pinterest-Post vom 13.10. `394123391` ist via Metricool PUBLISHED und hat öffentliche ID `1141451468123349394`, kein Duplikat angelegt.
+- **Etsy:** vorhandener shop/Listing-Kontext aus alten Dokumenten; aktive Kaufbarkeit wegen früherem CAPTCHA nicht neu bestätigt, keine Anti-Bot-Umgehung.
+- **Stripe:** direkt über verbundenen Live-Stripe-Connector kontrolliert: Händlername `OplsyCo`, Dashboard-Label `Oplsy`, kein Icon/Logo/Markenfarben, URL zeigt auf Etsy-OpslyCo; ausschließlich Dashboard kann eigenes öffentliches Branding ändern. 0 Charges, 0 PaymentIntents, EUR-Balance 0. Kein Selbstbranding-Änderungszugang über API, keine Live-Mutation vorgetäuscht.
+- **Browserzugang:** Vorbereitete Skyvern-Sitzungen abgelaufen, Neuanlage meldete ausdrücklich `402 Credits exhausted`; kein kostenpflichtiges Upgrade. Opera Browser Connector meldet aktuell `Browser not connected`; keine schreibende Editorintegration. Externe Profiländerungen deshalb als **BLOCKIERT**, nicht „fast fertig“.
+- **Neuss, DE:** Aktiver öffentlicher Checkout und fehlende Impressum-/Datenschutz-/ggf. B2C-Widerrufsinfos sind ROT; vom Nutzer gewünschte Nicht-Anmeldung unverändert, keine erzwungenen Kosten. Neue direkte Kaufwerbung wurde nur reversibel auf Entwurf gesetzt; bereits veröffentlichte Inhalte nicht gelöscht.
 
 ## Stop-Regel 27. Oktober 2026
 
