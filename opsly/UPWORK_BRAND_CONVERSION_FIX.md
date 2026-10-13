@@ -45,3 +45,9 @@
 - Bis dahin **keine behauptete Live-Änderung**, nur verifizierter Fehler und vorbereitete Angebotskopie.
 
 **Ziel:** Upwork-Katalog besser für zahlungsbereite Käufer lesbar machen, ohne unzulässige Verkäuferidentität, falsche Referenzen oder mehr Plattformkosten.
+
+## Upwork-Deckbild jetzt als Datei fertig (13.10.2026)
+
+- Tatsächlich gestaltete 4:3-Grafik mit dem **bestehenden Original-Opsly-Logo**, exakten Markenfarben und einer klar mit `CONCEPT DEMO` gekennzeichneten eigenen Beispieldarstellung. 1600 × 1200 Pixel, JPG ca. 228 KB. Entspricht Upworks offiziellen Empfehlungen (JPEG/PNG unter 10 MB, 4:3, Vorschau 1000×750 px): https://support.upwork.com/hc/en-us/articles/1500011309082-How-to-add-images-and-video-to-your-Project-Catalog-project
+- Datei **verifiziert und in persönlicher Opsly-Library gespeichert**: `/Opsly/Brand/Opsly_Upwork_WebStudio_Cover_4x3.jpg`, Library ID `libfile_882559096fa8819192d929dc92e5c382`.
+- Kann nach legitimer Upwork-Anmeldung ohne weitere Bildgenerierung sofort anstelle des aktuellen fremdgebrandeten GREENLEAF-Bildes eingesetzt werden. **Noch nicht live**, Cloudflare-Zugriffshindernis nicht umgehen. Nicht nachträglich in Upwork-Portfolio ein fiktives Kundenprojekt umdeuten.
