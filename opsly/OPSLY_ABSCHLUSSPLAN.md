@@ -24,12 +24,12 @@ Abschluss der einmaligen Aufbau-/Bereinigungssequenz bei tatsächlichem Zugriff 
 
 ## SEQUENZ 1 – Bestand einfrieren und sauber zuordnen
 
-**Status: TEILWEISE ERLEDIGT**
+**Status: ERLEDIGT (13.10.2026, Metricool-Recheck belegt)**
 
 - [x] Alle sieben Sparten auf Dachmarke Opsly und eine bestehende Designvorlage beschränkt (#111821, #25303C, #C8FF3D, #F6F8F7, #B9C6CA). Bereits vorhandenes originales Avatarbild in Library.
 - [x] Vorhandenes Upwork-Motiv und echte synthetische Excel-QA-Arbeitsprobe liegen bereits bereit; nichts neu produzieren.
 - [x] Überlappende Opsly-Nacht-/Marken-/Shop-Automatiken deaktiviert; nur gezielter Buyer-Test bis 27.10. und E-Mail-Wache aktiv.
-- [ ] Bestehende drei für 15., 16. und 18.10. geplante Werbeposts VOR Veröffentlichung anhand rechtlicher Freigabe und korrektem Angebot prüfen; bei fortdauernder ungeklärter Rechtslage riskante direkte Kauf-CTAs nicht zusätzlich ausspielen, dabei legitim in Metricool verschieben/als Entwurf sichern, nicht massenlöschen. IDs Instagram 394123318, Pinterest 394269740, Pinterest 394269766. 13.10. Pinterest 394123391 ist bereits veröffentlicht, nicht duplizieren.
+- [x] **13.10. per Metricool API tatsächlich in Entwürfe geändert und erneut gelesen:** Instagram 15.10. neue ID `394767950` (UUID `-6061265053453366900`), Pinterest Tools 16.10. ID `394768137` (UUID `8665871943231817169`), Pinterest Business 18.10. ID `394768173` (UUID `3189852285208053424`). Bei allen drei ist `draft:true`, Text/Bild/Ziel-Link erhalten, keine automatische Ausspielung der ungeklärten Shop-Kauf-CTAs. Original-IDs änderten sich durch Metricool-Update. Der 13.10. Pinterest-Beitrag `394123391` war bereits `PUBLISHED`, keine Duplikation.
 
 **Abnahme:** Keine neuen Build- oder Social-Duplikate; Postkalender entspricht Freigabestatus.
 
