@@ -6,6 +6,18 @@
 
 Nicht Anzahl verschickter E-Mails, erstellter Dateien oder Posts, sondern **bestätigte Kundenzahlungen abzüglich tatsächlich entstandener Kosten**. Kein Eintrag "Umsatz" ohne überprüfbare Zahlung. Der erste Umsatz hat Vorrang vor Reichweite, Branding-Kosmetik und dem Ausbau von Infrastruktur.
 
+## Vorangestelltes Gate 0: Rechtlicher Geschäftsbeginn und Kosten
+
+**VOR den Verkaufstoren A–D** steht ab dem 13.10.2026 eine obligatorische, anhand amtlicher Quellen überprüfte Rechts-/Kostenprüfung: [LEGAL_BUSINESS_START_AUDIT_2026-10-13.md](LEGAL_BUSINESS_START_AUDIT_2026-10-13.md).
+
+- Nutzer hat ausdrücklich bisher **keine Selbständigkeit angemeldet**, bestätigt keine Einnahmen und lehnt vor positiver Nachfrage weitere Ausgaben ab. **Keinesfalls die falsche These bestätigen, ohne Zahlung sei Anmeldung unwichtig.** Für Tätigkeit in Deutschland kommt es bei Gewerbe auf tatsächlichen Beginn dauerhaft selbständiger Tätigkeit mit Gewinnerzielungsabsicht an, nicht auf den ersten Euro. Ein aktiver Live-Shop mit Preis, Checkout und Dauerwerbung ist ein konkretes Signal, dass die Tätigkeit bereits begonnen haben könnte (§ 14 GewO; zuständige Behörde prüft).
+- Eigenvertrieb digitaler Waren spricht in Deutschland regelmäßig für eine gewerbliche Komponente, auch wenn individuelle Software-/Kreativleistungen als freiberuflich eingeordnet sein können. Nicht selbst verbindlich klassifizieren. Betriebsort/Steuerland und Datum des tatsächlichen Beginns nicht erraten.
+- Für Deutschland ist ein ELSTER-Fragebogen im Regelfall innerhalb **eines Monats nach Aufnahme** erforderlich. Kleinunternehmerregelung ist Umsatzsteuerrecht, **keine Freistellung von Anmeldung**. Keine GmbH/UG/weitere Fixkosten nahelegen; falls Gewerbe nötig, kostengünstige Einzelunternehmensoption bei echtem Bedarf erklären, nichts kostenpflichtig selbst beantragen.
+- Für den öffentlichen Shop/kommerziell genutzte Profile bei deutschem Sitz fehlen noch ein belegtes Impressum und einschlägige Datenschutz-/Verbraucherinformationen; bereits bestehende live Stripe-Buttons können Vertragsannahmen auslösen. **Nicht** weiter neue Checkout-Links posten, verbindliche Bestellungen eingehen oder Kundenzahlungen als unproblematisch bewerben, bevor der rechtliche Verkäuferstatus und die erforderlichen Pflichtseiten geklärt sind.
+- Ohne Freigabe weiterhin erlaubt: **kostenlose unverbindliche Nachfrageprüfung**, qualifizierte legitime Buyer Requests lesen, realistische Demo und Angebotsentwürfe erstellen, Angebote technisch/gestalterisch überprüfen. Vor echter Zahlung/Vertragsabschluss den Betreiber persönlich und sachlich informieren.
+- Keine Eigenmächtigkeit: bestehenden Shop/öffentliche Orders nicht stillschweigend abschalten, keine für andere Zwecke geblockte Floot-Veröffentlichung umgehen, keine private rechtliche Adresse veröffentlichen. Bei drohendem nicht gesetzeskonformem Kaufpfad offen als kritisches Risiko kennzeichnen und eine rechtmäßige Entscheidung einholen.
+- Bei jedem Automation-Lauf vor einer neuen Marketing- oder Verkaufsaktion **Gate-Status kurz als ROT/UNGEKLÄRT/FREI** prüfen; bei ROT/UNGEKLÄRT kostenfreie sichere Arbeit statt Shop-Skalierung durchführen. Keine unnötige lange Nutzer-Nachfragekette. Nur die eine wirklich benötigte Betreiber-/Standortfreigabe anfordern.
+
 ## Vier verbindliche Verkaufstore — VOR jeder Aktion prüfen
 
 A. **Nachfrage:** Käufer sucht nachweislich jetzt eine passende Leistung (aktive Auftragsanzeige, konkreter Request, bestehende bezahlte Kategorie als Sekundärsignal). Ungefragte Adresslisten und oberflächliche Trends zählen nicht als konkreter Buyer Intent.
