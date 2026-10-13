@@ -57,3 +57,18 @@ Solange 1–4 ungeklärt sind: **kostenlose Marktanalyse, Produkt-QA, unverbindl
 5. Bis dahin die bestehenden abgelaufenen/ungültigen Stripe-Sessions und 0-Zahlungsdaten als **kein Einnahmebeleg** behandeln. Keine Kunden- oder Rechtsbehauptungen erfinden.
 
 **STATUS: Faktenprüfung abgeschlossen. Registrierung, steuerlicher Status und öffentlicher Verkäuferstatus sind NICHT rechtlich geklärt. 0 echte Stripe-Zahlungen. Kein neuer kostenpflichtiger Vertrag/Anmeldung vorgenommen.**
+
+## Standort bestätigt am 13.10.2026
+
+**Nutzer hat am 13.10.2026 ausdrücklich bestätigt, in DEUTSCHLAND zu leben.** Deutscher Wohnsitz ist bekannt; der genaue Ort der tatsächlichen betrieblichen Tätigkeit/Betriebsstätte ist noch nicht genannt. Bei Betrieb von der deutschen Wohnung aus sind Gewerbeamt/Gemeinde und Finanzamt des zuständigen Orts konkret zuzuordnen. Deshalb sind die folgenden deutschen Melde-/Pflichtangaben keine rein hypothetische Auslandseinordnung mehr; vor abschließender Behördenzuordnung ist jedoch die Betriebsstätte zu bestätigen.
+
+**Neu am 13.10. anhand amtlicher Quellen bestätigt:**
+- [§ 14 Abs. 1 GewO](https://www.gesetze-im-internet.de/gewo/__14.html): Beginn eines stehenden selbständigen Gewerbebetriebs ist gleichzeitig der zuständigen Behörde anzuzeigen. Eine Zahlung als Beginnsvoraussetzung nennt die Norm NICHT. Ein seit Tagen öffentlicher Shop mit echten Live-Kaufbuttons und Marketing kann die Aufnahme darstellen – exakte Einordnung, Beginn und etwaige nachträgliche Meldung unverzüglich mit dem lokalen Gewerbeamt klären.
+- [ELSTER: Unternehmensgründung](https://www.elster.de/elsterweb/infoseite/unternehmensgruendung): Fragebogen zur steuerlichen Erfassung innerhalb eines Monats nach tatsächlicher Aufnahme; elektronisch und ohne neu gebuchten Steuerberater möglich. Nicht so tun, als beginne die Frist erst mit dem ersten Auftrag.
+- [IHK Nord Westfalen Beitragsfreistellung](https://www.ihk.de/nordwestfalen/ueber-uns/mitgliedschaft-und-beitrag/fragen-der-faqs/existenzgruender-und-kgt-3616796): Nicht eingetragene Gewerbetreibende bei Gewerbeertrag/Gewinn bis 5.200 EUR im Jahr im Grundsatz IHK-beitragsfrei. Zusätzlich können Existenzgründer unter weiteren Bedingungen im Start- und Folgejahr sowie später teilbefreit sein. Dies reduziert die Sorge vor laufenden Pflichtbeiträgen, aber ist keine allgemeine Zusage zu allen anderen Kosten/Krankenkasse/Steuern.
+- **GmbH/UG nicht erforderlich**, wenn Betrieb als natürliche Person/Einzelunternehmen möglich. Einmalige kommunale Gewerbeanzeigegebühr hängt vom Ort ab; keine Summe ohne Gemeinde als verbindlich nennen. ELSTER-Fragebogen/Beantragung einer Steuernummer grundsätzlich gebührenfrei.
+- Nutzer möchte ausdrücklich **keine Kosten vor Einnahmen**. Keine gebührenpflichtige Anmeldung, kein neues Abo und keine Rechtsformänderung eigenmächtig auslösen. Dennoch die rechtliche Meldung nicht auf später verschieben, falls Tätigkeit schon aufgenommen wurde; dringende kostenlose Rückfrage bei zuständigem Gewerbeamt/IHK priorisieren.
+
+**Nächster einziger Ortsfakt:** Stadt/Gemeinde der tatsächlichen Opsly-Betriebsstätte (falls Homeoffice: die Wohnsitzgemeinde). Erst danach kann der zuständige behördliche offizielle Anmeldelink, kommunale Einmalgebühr und konkrete Kontaktmöglichkeit zuverlässig ermittelt werden. Keine private Straßenadresse im Repo speichern oder ohne Erlaubnis veröffentlichen.
+
+**Freigabestatus:** Rot/ungeklärt für neuen Kaufabschluss; gratis nicht bindende Nachfrageprüfung und interne technische Vorarbeit fortsetzen. Schon live geschaltete Kaufbuttons/Social-Posts bleiben derzeit unter Nutzerentscheidung, nicht als rechtskonform deklarieren.
